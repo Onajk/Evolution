@@ -429,6 +429,17 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
           "name": "mononoki-Regular.ttf"
         }
+      },
+      {
+        "file": "assets/GloriaHallelujah-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "5f8b00629b1f7b8fbe4181d3c8296c76117b0d7f7ad534d45470070c10ba6e09_GloriaHallelujah-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/5f8b00629b1f7b8fbe4181d3c8296c76117b0d7f7ad534d45470070c10ba6e09_GloriaHallelujah-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -614,12 +625,17 @@
     {
       "name": "SPEED",
       "type": "number",
-      "value": 400
+      "value": 0
     },
     {
       "name": "SCORE",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "FIRST_START",
+      "type": "boolean",
+      "value": true
     }
   ],
   "layouts": [
