@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6897782140104718,
+    "zoomFactor": 1.3841198046307308,
     "windowMask": false
   },
   "objectsGroups": [
@@ -147,7 +147,7 @@
       "name": "Platform_Ground",
       "persistentUuid": "74e22a93-870b-49fd-b2d8-cd552b7761ab",
       "width": 0,
-      "x": -93,
+      "x": -1,
       "y": 196,
       "zOrder": 17,
       "numberProperties": [],
@@ -164,54 +164,6 @@
       "persistentUuid": "d77e043f-ff16-4c3c-8296-9fc7131a8bfd",
       "width": 0,
       "x": 0,
-      "y": 0,
-      "zOrder": -10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Background",
-      "persistentUuid": "953bf049-8e7f-44b6-a6a1-42e659d5a610",
-      "width": 0,
-      "x": 369,
-      "y": 0,
-      "zOrder": -10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Background",
-      "persistentUuid": "85d0dc61-d88e-4d26-9ded-1b9d90fc896a",
-      "width": 0,
-      "x": 738,
-      "y": 0,
-      "zOrder": -10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Background",
-      "persistentUuid": "7d677c34-2d58-40d3-b28a-90c661f13ab6",
-      "width": 0,
-      "x": 1107,
       "y": 0,
       "zOrder": -10,
       "numberProperties": [],
@@ -246,18 +198,17 @@
       "effects": [],
       "behaviors": [
         {
-          "isFolded": true,
+          "gravity": 1400,
+          "jumpSustainTime": 0.3,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "jumpSpeed": 500,
-          "jumpSustainTime": 0.2,
           "ignoreDefaultControls": true,
           "acceleration": 1000,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": false,
           "deceleration": 1500,
-          "gravity": 1050,
           "ladderClimbingSpeed": 200,
           "maxFallingSpeed": 800,
           "maxSpeed": 400,
@@ -412,9 +363,9 @@
       "assetStoreId": "",
       "height": 24,
       "name": "Platform_Ground",
-      "texture": "Ground SA.png5",
+      "texture": "Ground SA.png8",
       "type": "TiledSpriteObject::TiledSprite",
-      "width": 1600,
+      "width": 1100,
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -471,7 +422,7 @@
       }
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Rocks",
       "type": "Sprite",
@@ -512,12 +463,44 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
+                        "x": 1.5,
+                        "y": 23.5
+                      },
+                      {
+                        "x": 9,
+                        "y": 19
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 9
+                      },
+                      {
+                        "x": 23.5,
+                        "y": 8.5
+                      },
+                      {
+                        "x": 28,
                         "y": 1
                       },
                       {
-                        "x": 59,
-                        "y": 1
+                        "x": 34,
+                        "y": 1.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 11
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 10.5
+                      },
+                      {
+                        "x": 51,
+                        "y": 18.5
+                      },
+                      {
+                        "x": 58.5,
+                        "y": 24.5
                       },
                       {
                         "x": 59,
@@ -622,16 +605,24 @@
                         "y": 25
                       },
                       {
-                        "x": 56,
-                        "y": 32
+                        "x": 52,
+                        "y": 33
                       },
                       {
-                        "x": 60,
+                        "x": 57.5,
                         "y": 44.5
                       },
                       {
                         "x": 48.5,
-                        "y": 47
+                        "y": 39
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 45.5
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 33.5
                       },
                       {
                         "x": 20.5,
@@ -654,9 +645,9 @@
       "assetStoreId": "",
       "height": 196,
       "name": "Background",
-      "texture": "Back SA.png",
+      "texture": "SA back 1100.png",
       "type": "TiledSpriteObject::TiledSprite",
-      "width": 369,
+      "width": 1100,
       "variables": [],
       "effects": [],
       "behaviors": []
@@ -1283,19 +1274,11 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::Or"
+            "value": "KeyFromTextPressed"
           },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Space\""
-              ]
-            }
+          "parameters": [
+            "",
+            "\"Space\""
           ]
         }
       ],
@@ -1307,6 +1290,33 @@
           "parameters": [
             "Platformer_Character",
             "PlatformerObject"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "350905_5450487-lq.mp3",
+                "",
+                "20",
+                ""
+              ]
+            }
           ]
         }
       ]

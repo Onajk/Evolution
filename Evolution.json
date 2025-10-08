@@ -601,6 +601,64 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/44aceaa249d2ecb8bfe3eb7bedcb17aac44c0f5f13f9f58d85427a5afa7e92f0_CarterOne-Regular.ttf",
           "name": "CarterOne-Regular.ttf"
         }
+      },
+      {
+        "file": "SA back 1100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SA back 1100.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "SA ground 1100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SA ground 1100.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Ground SA2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground SA2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ground SA.png6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Ground SA.png6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ground SA.png7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Ground SA.png7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ground SA.png8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Ground SA.png8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "350905_5450487-lq.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "350905_5450487-lq.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
