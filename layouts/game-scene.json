@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.3841198046307308,
+    "zoomFactor": 0.841642812537339,
     "windowMask": false
   },
   "objectsGroups": [
@@ -131,7 +131,7 @@
       "name": "Dino_Flying",
       "persistentUuid": "d4c6be61-a147-4fce-a76d-e1338fcb7047",
       "width": 0,
-      "x": 1185,
+      "x": 1399,
       "y": 16,
       "zOrder": 16,
       "numberProperties": [],
@@ -166,6 +166,38 @@
       "x": 0,
       "y": 0,
       "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Restart_Button",
+      "persistentUuid": "2d8145f9-5e6c-4462-af36-22cd1b383e6f",
+      "width": 0,
+      "x": 447,
+      "y": 31,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Leaderboard_Button",
+      "persistentUuid": "bdd9c6a6-7dda-431c-8f05-f48389595132",
+      "width": 0,
+      "x": 448,
+      "y": 113,
+      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -651,6 +683,42 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "5f0df6131c9646dcbe98798196db5b6d806eb25564f86d2e119a084d1e20bf74",
+      "name": "Restart_Button",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Black Decorated Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 6,
+        "BottomPadding": 24,
+        "TopPadding": 20,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Restart"
+      }
+    },
+    {
+      "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+      "name": "Leaderboard_Button",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Black Square Decorated Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 6,
+        "BottomPadding": 24,
+        "TopPadding": 24,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Leaderboard"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -673,6 +741,12 @@
       },
       {
         "objectName": "Background"
+      },
+      {
+        "objectName": "Restart_Button"
+      },
+      {
+        "objectName": "Leaderboard_Button"
       }
     ]
   },
@@ -695,16 +769,6 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "isPlayerRunning",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
             "GAME_OVER",
             "False",
             ""
@@ -719,555 +783,569 @@
             "=",
             "0"
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+        },
         {
           "type": {
-            "value": "BooleanVariable"
+            "value": "SetNumberVariable"
           },
           "parameters": [
-            "isPlayerRunning",
-            "False",
-            ""
+            "SPEED",
+            "=",
+            "400"
           ]
         },
         {
           "type": {
-            "value": "AnyKeyPressed"
+            "value": "Cache"
           },
           "parameters": [
-            ""
+            "Restart_Button"
           ]
-        }
-      ],
-      "actions": [
+        },
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "Cache"
           },
           "parameters": [
-            "isPlayerRunning",
-            "True",
-            ""
+            "Leaderboard_Button"
           ]
         }
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "conditions": [],
+      "actions": [
         {
           "type": {
-            "value": "BooleanVariable"
+            "value": "SetNumberVariable"
           },
           "parameters": [
-            "isPlayerRunning",
-            "True",
-            ""
+            "SPEED",
+            "+",
+            "0.05"
           ]
         }
-      ],
-      "actions": [],
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Score",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "Background & Objects Moving",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "Rocks",
-                    "+",
-                    "-1 * SPEED * TimeDelta()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TiledSpriteObject::XOffset"
-                  },
-                  "parameters": [
-                    "Platform_Ground",
-                    "+",
-                    "SPEED * TimeDelta()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TiledSpriteObject::XOffset"
-                  },
-                  "parameters": [
-                    "Background",
-                    "+",
-                    "SPEED/2 * TimeDelta()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "+",
-                    "-1 * SPEED * TimeDelta()"
-                  ]
-                }
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Distance",
+                "Text",
+                "=",
+                "SCORE"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "+",
+                "1"
               ]
             }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "Score",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Distance",
-                    "Text",
-                    "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    "+",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "Player Character Rotation",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Angle"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "=",
-                    "-20"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "right",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "left",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Angle"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "=",
-                    "20"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "right",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "left",
-                    "False",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "left",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "RotateTowardAngle"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "20",
-                    "Platformer_Character.rotation_speed",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "right",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "RotateTowardAngle"
-                  },
-                  "parameters": [
-                    "Platformer_Character",
-                    "-20",
-                    "Platformer_Character.rotation_speed",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "Dino Flying Rotation",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Angle"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "=",
-                    "-20"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "right",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "left",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Angle"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "=",
-                    "20"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "right",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "left",
-                    "False",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "left",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "RotateTowardAngle"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "20",
-                    "Platformer_Character.rotation_speed",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "right",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "RotateTowardAngle"
-                  },
-                  "parameters": [
-                    "Dino_Flying",
-                    "-20",
-                    "Platformer_Character.rotation_speed",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PosX"
-          },
-          "parameters": [
-            "Dino_Flying",
-            "<=",
-            "-400"
           ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Dino_Flying",
-            "1150",
-            "16",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangePlan"
-          },
-          "parameters": [
-            "Dino_Flying",
-            "=",
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetAngle"
-          },
-          "parameters": [
-            "Dino_Flying",
-            "=",
-            "-20"
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Player Character Rotation",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "PosX"
-          },
-          "parameters": [
-            "Rocks",
-            "<=",
-            "-100"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Angle"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "=",
+                "-20"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "right",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "left",
+                "True",
+                ""
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Angle"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "=",
+                "20"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "right",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "left",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "left",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "20",
+                "Platformer_Character.rotation_speed",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "right",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "-20",
+                "Platformer_Character.rotation_speed",
+                ""
+              ]
+            }
+          ]
         }
       ],
-      "actions": [
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Dino Flying Rotation",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Rocks",
-            "1100",
-            "167",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Angle"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "=",
+                "-20"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "right",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "left",
+                "True",
+                ""
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "ChangePlan"
-          },
-          "parameters": [
-            "Rocks",
-            "=",
-            "2"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Angle"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "=",
+                "20"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "right",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "left",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "left",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "20",
+                "Platformer_Character.rotation_speed",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "right",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "-20",
+                "Platformer_Character.rotation_speed",
+                ""
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Background & Objects Moving",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Rocks",
+                "+",
+                "-1 * SPEED * TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::XOffset"
+              },
+              "parameters": [
+                "Platform_Ground",
+                "+",
+                "SPEED * TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::XOffset"
+              },
+              "parameters": [
+                "Background",
+                "+",
+                "SPEED/2 * TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "+",
+                "-1.3 * SPEED * TimeDelta()"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Spawns",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "<=",
+                "-300"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Dino_Flying",
+                "1150",
+                "16",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Dino_Flying",
+                "=",
+                "-20"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Rocks",
+                "<=",
+                "-50"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Rocks",
+                "1100",
+                "167",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Rocks",
+                "=",
+                "2"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1326,14 +1404,34 @@
       "conditions": [
         {
           "type": {
-            "value": "CollisionNP"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "Platformer_Character",
-            "Rocks",
-            "",
-            "",
-            ""
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Rocks",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Dino_Flying",
+                "",
+                "",
+                ""
+              ]
+            }
           ]
         }
       ],
@@ -1348,38 +1446,47 @@
             ""
           ]
         }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Platformer_Character",
-            "Dino_Flying",
-            "",
-            "",
-            ""
-          ]
-        }
       ],
-      "actions": [
+      "events": [
         {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "GAME_OVER",
-            "True",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "punch-2-37333.mp3",
+                "",
+                "20",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SPEED",
+                "=",
+                "0"
+              ]
+            }
           ]
         }
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1396,11 +1503,19 @@
       "actions": [
         {
           "type": {
-            "value": "Scene"
+            "value": "Montre"
           },
           "parameters": [
-            "",
-            "CurrentSceneName()",
+            "Restart_Button",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Leaderboard_Button",
             ""
           ]
         }
@@ -2673,12 +2788,10 @@
       "conditions": [
         {
           "type": {
-            "value": "SourisSurObjet"
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
           },
           "parameters": [
-            "Distance",
-            "",
-            "yes",
+            "Restart_Button",
             ""
           ]
         }
@@ -2690,7 +2803,33 @@
           },
           "parameters": [
             "",
-            "\"Menu Scene\"",
+            "\"Game Scene\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "Leaderboard_Button",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Leaderboard Scene\"",
             ""
           ]
         }
