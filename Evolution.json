@@ -433,6 +433,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/5f8b00629b1f7b8fbe4181d3c8296c76117b0d7f7ad534d45470070c10ba6e09_GloriaHallelujah-Regular.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "SA back opt2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SA back opt2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

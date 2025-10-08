@@ -743,7 +743,7 @@
       "assetStoreId": "",
       "height": 196,
       "name": "Background",
-      "texture": "SA back 1100.png",
+      "texture": "SA back opt2.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 1100,
       "variables": [],
