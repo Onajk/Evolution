@@ -488,7 +488,7 @@
       "effects": [],
       "behaviors": [],
       "string": "0",
-      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "font": "5f8b00629b1f7b8fbe4181d3c8296c76117b0d7f7ad534d45470070c10ba6e09_GloriaHallelujah-Regular.ttf",
       "textAlignment": "right",
       "characterSize": 30,
       "color": {
@@ -511,7 +511,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "0",
-        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "font": "5f8b00629b1f7b8fbe4181d3c8296c76117b0d7f7ad534d45470070c10ba6e09_GloriaHallelujah-Regular.ttf",
         "textAlignment": "right",
         "verticalTextAlignment": "center",
         "characterSize": 30,
@@ -1091,7 +1091,7 @@
                     "Distance",
                     "Text",
                     "=",
-                    "SCORE"
+                    "ToString(floorTo(SCORE))"
                   ]
                 },
                 {
@@ -1101,7 +1101,7 @@
                   "parameters": [
                     "SCORE",
                     "+",
-                    "1"
+                    "0.1"
                   ]
                 }
               ]
