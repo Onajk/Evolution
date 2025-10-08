@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.0973679695629894,
+    "zoomFactor": 0.6672773998330219,
     "windowMask": false
   },
   "objectsGroups": [
@@ -272,6 +272,22 @@
       "x": 0,
       "y": 196,
       "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Coin",
+      "persistentUuid": "5fa96b96-7566-4509-a461-8b200adcee2e",
+      "width": 0,
+      "x": 1492,
+      "y": 112,
+      "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1870,6 +1886,128 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Coin",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "left",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "right",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "rotation_speed",
+          "type": "number",
+          "value": 40
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "extraBorder": 1000,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Item DA 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 22,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 0
+                      },
+                      {
+                        "x": 43,
+                        "y": 22.5
+                      },
+                      {
+                        "x": 58,
+                        "y": 7
+                      },
+                      {
+                        "x": 87,
+                        "y": 1
+                      },
+                      {
+                        "x": 68,
+                        "y": 25
+                      },
+                      {
+                        "x": 52,
+                        "y": 33
+                      },
+                      {
+                        "x": 57.5,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 48.5,
+                        "y": 39
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 45.5
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 29
+                      },
+                      {
+                        "x": 1.5,
+                        "y": 12
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1925,6 +2063,9 @@
       },
       {
         "objectName": "Press_Space_Tooltip"
+      },
+      {
+        "objectName": "Coin"
       }
     ]
   },
@@ -2784,6 +2925,51 @@
                     "value": "PosX"
                   },
                   "parameters": [
+                    "Coin",
+                    "<=",
+                    "-200"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Coin",
+                    "1400",
+                    "112",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Coin",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
                     "Dino_Flying",
                     "<=",
                     "-300"
@@ -3137,6 +3323,16 @@
                     "value": "MettreX"
                   },
                   "parameters": [
+                    "Coin",
+                    "+",
+                    "-1 * SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
                     "Rocks",
                     "+",
                     "-1 * SPEED * TimeDelta()"
@@ -3239,7 +3435,7 @@
                   "parameters": [
                     "Dino_Flying2",
                     "+",
-                    "-1.2 * SPEED * TimeDelta()"
+                    "-1.3 * SPEED * TimeDelta()"
                   ]
                 },
                 {
@@ -3249,7 +3445,7 @@
                   "parameters": [
                     "Dino_Flying3",
                     "+",
-                    "-1.3 * SPEED * TimeDelta()"
+                    "-1.2 * SPEED * TimeDelta()"
                   ]
                 }
               ]
@@ -3312,6 +3508,92 @@
                         "",
                         "20",
                         ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "Coin",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "SUCCESS BEEPS Multiple Tone2.wav",
+                        "",
+                        "10",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SCORE",
+                        "+",
+                        "10"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Coin",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Coin",
+                        "1400",
+                        "112",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Coin",
+                        "=",
+                        "2"
                       ]
                     }
                   ]

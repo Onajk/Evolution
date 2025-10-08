@@ -613,6 +613,44 @@
         "name": "Obstacle IR5",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Item DA 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Item DA 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "SUCCESS PICKUP Collect Beep 02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "SUCCESS PICKUP Collect Beep 02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "SUCCESS BEEPS Multiple Tone 01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "SUCCESS BEEPS Multiple Tone 01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "SUCCESS BEEPS Multiple Tone2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "SUCCESS BEEPS Multiple Tone2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
