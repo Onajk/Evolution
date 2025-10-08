@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.9934433498259921,
+    "zoomFactor": 1.0973679695629894,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1532,7 +1532,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Obstacle IR4",
+                  "image": "Obstacle IR5",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1661,6 +1661,215 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Dino_Flying2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "left",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "right",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "rotation_speed",
+          "type": "number",
+          "value": 40
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "extraBorder": 1200,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Item IR 2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Item IR 2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2.5,
+                        "y": 29.5
+                      },
+                      {
+                        "x": 3,
+                        "y": 23
+                      },
+                      {
+                        "x": 37,
+                        "y": 9
+                      },
+                      {
+                        "x": 37.5,
+                        "y": 3.5
+                      },
+                      {
+                        "x": 43.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 3
+                      },
+                      {
+                        "x": 55.5,
+                        "y": 11.5
+                      },
+                      {
+                        "x": 55.5,
+                        "y": 23
+                      },
+                      {
+                        "x": 49,
+                        "y": 26.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 24
+                      },
+                      {
+                        "x": 9.5,
+                        "y": 39
+                      },
+                      {
+                        "x": 6.5,
+                        "y": 36.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Dino_Flying3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "left",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "right",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "rotation_speed",
+          "type": "number",
+          "value": 40
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "extraBorder": 1200,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Obstacle DA 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 10,
+                        "y": 6.5
+                      },
+                      {
+                        "x": 53.5,
+                        "y": 4
+                      },
+                      {
+                        "x": 54,
+                        "y": 23
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 19,
+                        "y": 30
+                      },
+                      {
+                        "x": 18,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 10,
+                        "y": 25
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1692,6 +1901,12 @@
       },
       {
         "objectName": "Dino_Flying"
+      },
+      {
+        "objectName": "Dino_Flying2"
+      },
+      {
+        "objectName": "Dino_Flying3"
       },
       {
         "objectName": "Background"
@@ -2113,7 +2328,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Dino Flying Rotation",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2262,6 +2476,302 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "name": "Dino Flying Rotation 2",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "=",
+                    "-20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "right",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "=",
+                    "20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "left",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "-20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Dino Flying Rotation 3",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "=",
+                    "-20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "right",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "=",
+                    "20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "left",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "-20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "name": "Spawns",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2277,6 +2787,16 @@
                     "Dino_Flying",
                     "<=",
                     "-300"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "100"
                   ]
                 },
                 {
@@ -2329,9 +2849,19 @@
                     "value": "PosX"
                   },
                   "parameters": [
-                    "Rocks",
+                    "Dino_Flying2",
                     "<=",
-                    "-50"
+                    "-300"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "200"
                   ]
                 },
                 {
@@ -2339,6 +2869,110 @@
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Dino_Flying2",
+                    "1150",
+                    "12",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "=",
+                    "-20"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "<=",
+                    "-300"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Dino_Flying3",
+                    "1150",
+                    "16",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "=",
+                    "-20"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Rocks",
+                    "<=",
+                    "-50"
+                  ]
                 },
                 {
                   "type": {
@@ -2349,6 +2983,12 @@
                     "<",
                     "100"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -2415,7 +3055,7 @@
                     "",
                     "Rocks2",
                     "1122",
-                    "138",
+                    "151",
                     ""
                   ]
                 },
@@ -2591,6 +3231,26 @@
                     "+",
                     "-1.3 * SPEED * TimeDelta()"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Dino_Flying2",
+                    "+",
+                    "-1.2 * SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Dino_Flying3",
+                    "+",
+                    "-1.3 * SPEED * TimeDelta()"
+                  ]
                 }
               ]
             }
@@ -2710,6 +3370,30 @@
                       "parameters": [
                         "Platformer_Character",
                         "Dino_Flying",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "Dino_Flying2",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "Dino_Flying3",
                         "",
                         "",
                         ""
@@ -3112,7 +3796,19 @@
             "",
             "Rocks2",
             "1122",
-            "138",
+            "151",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Dino_Flying2",
+            "1800",
+            "12",
             ""
           ]
         },
@@ -3187,6 +3883,18 @@
             "Rocks3",
             "1177",
             "147",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Dino_Flying3",
+            "1800",
+            "16",
             ""
           ]
         },

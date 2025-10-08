@@ -565,6 +565,54 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "Item IR 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Item IR 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Obstacle DA 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Obstacle DA 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Obstacle IR5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Obstacle IR5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Item IR 2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Item IR 2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Item IR3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Item IR3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Obstacle IR5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Obstacle IR5",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
