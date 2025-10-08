@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3797121001948025,
+    "zoomFactor": 0.6897782140104718,
     "windowMask": false
   },
   "objectsGroups": [
@@ -43,7 +43,7 @@
   ],
   "instances": [
     {
-      "angle": 0,
+      "angle": -20,
       "customSize": false,
       "height": 64,
       "keepRatio": true,
@@ -51,9 +51,9 @@
       "name": "Platformer_Character",
       "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
       "width": 128,
-      "x": 179,
-      "y": 750,
-      "zOrder": 1,
+      "x": 140,
+      "y": 74,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -61,15 +61,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 96,
-      "keepRatio": true,
+      "depth": 0.2549019607843137,
+      "height": 40,
       "layer": "MobileControls",
       "name": "Distance",
       "persistentUuid": "fb74c02c-1e3b-40d9-9002-7ac7f9de6d3a",
-      "width": 255,
-      "x": 1665,
-      "y": 0,
+      "width": 200,
+      "x": 899,
+      "y": 20,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -84,9 +83,9 @@
       "name": "Rocks",
       "persistentUuid": "bb9a1753-5c81-4642-bfad-ecb8f5dd8b99",
       "width": 0,
-      "x": 608,
-      "y": 824,
-      "zOrder": -1,
+      "x": 569,
+      "y": 167,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -100,9 +99,9 @@
       "name": "Rocks",
       "persistentUuid": "76adc262-15e3-4363-84ad-b8fcb4f47b66",
       "width": 0,
-      "x": 1664,
-      "y": 824,
-      "zOrder": -1,
+      "x": 937,
+      "y": 167,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -116,24 +115,24 @@
       "name": "Rocks",
       "persistentUuid": "4bd4fc68-2dd6-43de-81e3-95c7a8c4c419",
       "width": 0,
-      "x": 1728,
-      "y": 824,
-      "zOrder": -1,
+      "x": 1001,
+      "y": 167,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": -20,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Trees",
+      "name": "Dino_Flying",
       "persistentUuid": "d4c6be61-a147-4fce-a76d-e1338fcb7047",
       "width": 0,
-      "x": 1967,
-      "y": 552,
+      "x": 1185,
+      "y": 25,
       "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
@@ -148,9 +147,73 @@
       "name": "Platform_Ground",
       "persistentUuid": "74e22a93-870b-49fd-b2d8-cd552b7761ab",
       "width": 0,
-      "x": -500,
-      "y": 872,
+      "x": -93,
+      "y": 196,
       "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "d77e043f-ff16-4c3c-8296-9fc7131a8bfd",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "953bf049-8e7f-44b6-a6a1-42e659d5a610",
+      "width": 0,
+      "x": 369,
+      "y": 0,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "85d0dc61-d88e-4d26-9ded-1b9d90fc896a",
+      "width": 0,
+      "x": 738,
+      "y": 0,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "7d677c34-2d58-40d3-b28a-90c661f13ab6",
+      "width": 0,
+      "x": 1107,
+      "y": 0,
+      "zOrder": -10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -163,13 +226,31 @@
       "name": "Platformer_Character",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "left",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "right",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "rotation_speed",
+          "type": "number",
+          "value": 40
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
           "isFolded": true,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "jumpSpeed": 500,
+          "jumpSustainTime": 0.2,
           "ignoreDefaultControls": true,
           "acceleration": 1000,
           "canGoDownFromJumpthru": true,
@@ -177,8 +258,6 @@
           "canGrabWithoutMoving": false,
           "deceleration": 1500,
           "gravity": 1050,
-          "jumpSpeed": 717,
-          "jumpSustainTime": 0.3,
           "ladderClimbingSpeed": 200,
           "maxFallingSpeed": 800,
           "maxSpeed": 400,
@@ -186,61 +265,49 @@
           "useLegacyTrajectory": false,
           "xGrabTolerance": 10,
           "yGrabOffset": 0
-        },
-        {
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera",
-          "LeftwardSpeed": 0.9,
-          "RightwardSpeed": 0.9,
-          "UpwardSpeed": 0.9,
-          "DownwardSpeed": 0.9,
-          "FollowOnX": false,
-          "FollowOnY": false,
-          "FollowFreeAreaLeft": 0,
-          "FollowFreeAreaRight": 0,
-          "FollowFreeAreaTop": 0,
-          "FollowFreeAreaBottom": 0,
-          "CameraOffsetX": 300,
-          "CameraOffsetY": 0,
-          "CameraDelay": 0,
-          "ForecastTime": 0,
-          "ForecastHistoryDuration": 0,
-          "LogLeftwardSpeed": 2.0247e-320,
-          "LogRightwardSpeed": 2.0247e-320,
-          "LogDownwardSpeed": 2.0247e-320,
-          "LogUpwardSpeed": 2.0247e-320,
-          "DelayedCenterX": 2.0247e-320,
-          "DelayedCenterY": 2.0247e-320,
-          "ForecastHistoryMeanX": 2.0247e-320,
-          "ForecastHistoryMeanY": 2.0247e-320,
-          "ForecastHistoryVarianceX": 2.0247e-320,
-          "ForecastHistoryCovariance": 2.0247e-320,
-          "ForecastHistoryLinearA": 2.0247e-320,
-          "ForecastHistoryLinearB": 2.0247e-320,
-          "ForecastedX": 2.0247e-320,
-          "ForecastedY": 2.0247e-320,
-          "ProjectedNewestX": 2.0247e-320,
-          "ProjectedNewestY": 2.0247e-320,
-          "ProjectedOldestX": 2.0247e-320,
-          "ProjectedOldestY": 2.0247e-320,
-          "ForecastHistoryVarianceY": 2.0247e-320,
-          "Index": 2.0247e-320,
-          "CameraDelayCatchUpSpeed": 0,
-          "CameraExtraDelay": 2.0247e-320,
-          "WaitingSpeedXMax": 2.0247e-320,
-          "WaitingSpeedYMax": 2.0247e-320,
-          "WaitingEnd": 2.0247e-320,
-          "CameraDelayCatchUpDuration": 2.0247e-320,
-          "LeftwardSpeedMax": 9000,
-          "RightwardSpeedMax": 9000,
-          "UpwardSpeedMax": 9000,
-          "DownwardSpeedMax": 9000,
-          "OldX": 9000.000000007454,
-          "OldY": 9000.000000007454,
-          "IsCalledManually": false
         }
       ],
       "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "character SA.png",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "Platformer_Character",
           "useMultipleDirections": false,
@@ -251,7 +318,7 @@
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "Platformer_Character15",
                   "points": [
                     {
@@ -276,29 +343,10 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 32,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 128
-                      },
-                      {
-                        "x": 32,
-                        "y": 128
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 },
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "Platformer_Character16",
                   "points": [
                     {
@@ -323,29 +371,10 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 32,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 128
-                      },
-                      {
-                        "x": 32,
-                        "y": 128
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 },
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "Platformer_Character17",
                   "points": [
                     {
@@ -370,29 +399,10 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 32,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 128
-                      },
-                      {
-                        "x": 32,
-                        "y": 128
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 },
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "Platformer_Character18",
                   "points": [
                     {
@@ -417,29 +427,10 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 32,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 128
-                      },
-                      {
-                        "x": 32,
-                        "y": 128
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 },
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "Platformer_Character19",
                   "points": [
                     {
@@ -464,29 +455,10 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 32,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 128
-                      },
-                      {
-                        "x": 32,
-                        "y": 128
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 },
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "Platformer_Character20",
                   "points": [
                     {
@@ -511,29 +483,10 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 32,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 128
-                      },
-                      {
-                        "x": 32,
-                        "y": 128
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 },
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "Platformer_Character21",
                   "points": [
                     {
@@ -558,26 +511,7 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 32,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 0
-                      },
-                      {
-                        "x": 72,
-                        "y": 128
-                      },
-                      {
-                        "x": 32,
-                        "y": 128
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -587,11 +521,11 @@
     },
     {
       "assetStoreId": "",
-      "height": 16,
+      "height": 24,
       "name": "Platform_Ground",
-      "texture": "assets\\StartingGround.png2",
+      "texture": "Ground SA.png5",
       "type": "TiledSpriteObject::TiledSprite",
-      "width": 3000,
+      "width": 1600,
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -615,10 +549,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "0000",
+      "string": "0",
       "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
-      "textAlignment": "center",
-      "characterSize": 60,
+      "textAlignment": "right",
+      "characterSize": 30,
       "color": {
         "b": 255,
         "g": 255,
@@ -638,11 +572,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "0000",
+        "text": "0",
         "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
-        "textAlignment": "center",
-        "verticalTextAlignment": "top",
-        "characterSize": 60,
+        "textAlignment": "right",
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
         "lineHeight": 0,
         "color": "255;255;255"
       }
@@ -657,12 +591,60 @@
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 300,
           "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside"
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 350
         }
       ],
       "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Obstacle  SA 3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 59,
+                        "y": 1
+                      },
+                      {
+                        "x": 59,
+                        "y": 34
+                      },
+                      {
+                        "x": 1,
+                        "y": 34
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "Rocks",
           "useMultipleDirections": false,
@@ -690,20 +672,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 8,
-                        "y": 20
+                        "x": 1,
+                        "y": 1
                       },
                       {
-                        "x": 60,
-                        "y": 20
+                        "x": 59,
+                        "y": 1
                       },
                       {
-                        "x": 60,
-                        "y": 52
+                        "x": 59,
+                        "y": 34
                       },
                       {
-                        "x": 8,
-                        "y": 52
+                        "x": 1,
+                        "y": 34
                       }
                     ]
                   ]
@@ -717,31 +699,46 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Trees",
+      "name": "Dino_Flying",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "left",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "right",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "rotation_speed",
+          "type": "number",
+          "value": 40
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 600,
           "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside"
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 600
         }
       ],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "Obstacle SA 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -757,20 +754,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 7
+                        "x": 2,
+                        "y": 1
                       },
                       {
-                        "x": 320,
-                        "y": 7
+                        "x": 87,
+                        "y": 1
                       },
                       {
-                        "x": 320,
-                        "y": 320
+                        "x": 87,
+                        "y": 47
                       },
                       {
-                        "x": 0,
-                        "y": 320
+                        "x": 2,
+                        "y": 47
                       }
                     ]
                   ]
@@ -780,6 +777,17 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 196,
+      "name": "Background",
+      "texture": "Back SA.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 369,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -798,7 +806,10 @@
         "objectName": "Distance"
       },
       {
-        "objectName": "Trees"
+        "objectName": "Dino_Flying"
+      },
+      {
+        "objectName": "Background"
       }
     ]
   },
@@ -880,73 +891,397 @@
       "actions": [],
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Background & Objects Moving",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "Trees",
-                "+",
-                "-1 * SPEED * TimeDelta()"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Rocks",
+                    "+",
+                    "-1 * SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Platform_Ground",
+                    "+",
+                    "SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Background",
+                    "+",
+                    "SPEED/2 * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "+",
+                    "-1 * SPEED * TimeDelta()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Score",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Distance",
+                    "Text",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Player Character Rotation",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "=",
+                    "-20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "right",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "Rocks",
-                "+",
-                "-1 * SPEED * TimeDelta()"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "=",
+                    "20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "left",
+                    "False",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "TiledSpriteObject::XOffset"
-              },
-              "parameters": [
-                "Platform_Ground",
-                "+",
-                "SPEED * TimeDelta()"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "-20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Dino Flying Rotation",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Distance",
-                "Text",
-                "=",
-                "SCORE"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "=",
+                    "-20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "right",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "=",
+                    "20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "left",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "-20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
               ]
             }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "+",
-                "1"
-              ]
-            }
-          ]
+          ],
+          "parameters": []
         }
       ]
     },
@@ -958,7 +1293,7 @@
             "value": "PosX"
           },
           "parameters": [
-            "Trees",
+            "Dino_Flying",
             "<=",
             "-400"
           ]
@@ -977,9 +1312,9 @@
           },
           "parameters": [
             "",
-            "Trees",
-            "1994",
-            "552",
+            "Dino_Flying",
+            "1150",
+            "25",
             ""
           ]
         },
@@ -988,9 +1323,19 @@
             "value": "ChangePlan"
           },
           "parameters": [
-            "Trees",
+            "Dino_Flying",
             "=",
             "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetAngle"
+          },
+          "parameters": [
+            "Dino_Flying",
+            "=",
+            "-20"
           ]
         }
       ]
@@ -1005,7 +1350,7 @@
           "parameters": [
             "Rocks",
             "<=",
-            "300"
+            "-100"
           ]
         },
         {
@@ -1023,8 +1368,8 @@
           "parameters": [
             "",
             "Rocks",
-            "1994",
-            "824",
+            "1100",
+            "167",
             ""
           ]
         },
@@ -1199,10 +1544,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "SmoothCamera",
-      "type": "SmoothCamera::SmoothCamera"
     },
     {
       "name": "Text",

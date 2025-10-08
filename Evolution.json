@@ -22,8 +22,8 @@
     "name": "Evolution",
     "description": "",
     "author": "",
-    "windowWidth": 1920,
-    "windowHeight": 1080,
+    "windowWidth": 1100,
+    "windowHeight": 220,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -474,6 +474,78 @@
         "name": "assets\\StartingGround.png2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "character SA.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character SA.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Obstacle  SA 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Obstacle  SA 3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Ground SA.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground SA.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ground SA.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Ground SA.png2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Back SA.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Back SA.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ground SA.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Ground SA.png3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ground SA.png4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Ground SA.png4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Obstacle SA 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Obstacle SA 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ground SA.png5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Ground SA.png5",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -484,172 +556,6 @@
   },
   "objectsGroups": [],
   "variables": [
-    {
-      "name": "leaderboard",
-      "type": "structure",
-      "children": [
-        {
-          "name": "1",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test1"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 10
-            }
-          ]
-        },
-        {
-          "name": "10",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test10"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "2",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test2"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 9
-            }
-          ]
-        },
-        {
-          "name": "3",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test3"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 8
-            }
-          ]
-        },
-        {
-          "name": "4",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test4"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 7
-            }
-          ]
-        },
-        {
-          "name": "5",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test5"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 6
-            }
-          ]
-        },
-        {
-          "name": "6",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test6"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 5
-            }
-          ]
-        },
-        {
-          "name": "7",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test7"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 4
-            }
-          ]
-        },
-        {
-          "name": "8",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test8"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "name": "9",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "test9"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 2
-            }
-          ]
-        }
-      ]
-    },
     {
       "name": "SPEED",
       "type": "number",
@@ -672,7 +578,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/leaderboard-scene"
+      "referenceTo": "/layouts/ending-scene"
     }
   ],
   "externalEvents": [],
