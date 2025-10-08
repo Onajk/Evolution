@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.841642812537339,
+    "zoomFactor": 0.6897782140104731,
     "windowMask": false
   },
   "objectsGroups": [
@@ -54,22 +54,6 @@
       "x": 140,
       "y": 74,
       "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0.2549019607843137,
-      "height": 40,
-      "layer": "MobileControls",
-      "name": "Distance",
-      "persistentUuid": "fb74c02c-1e3b-40d9-9002-7ac7f9de6d3a",
-      "width": 200,
-      "x": 899,
-      "y": 20,
-      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -175,7 +159,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "Restart_Button",
       "persistentUuid": "2d8145f9-5e6c-4462-af36-22cd1b383e6f",
       "width": 0,
@@ -191,13 +175,29 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "Leaderboard_Button",
       "persistentUuid": "bdd9c6a6-7dda-431c-8f05-f48389595132",
       "width": 0,
       "x": 448,
       "y": 113,
       "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 30,
+      "layer": "",
+      "name": "Distance",
+      "persistentUuid": "1cdc6ac5-248a-4eb7-9b47-5f29b1c5eca9",
+      "width": 200,
+      "x": 893,
+      "y": 24,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -288,16 +288,44 @@
                   "customCollisionMask": [
                     [
                       {
+                        "x": 11,
+                        "y": 61.5
+                      },
+                      {
                         "x": 0,
-                        "y": 36
+                        "y": 54.5
                       },
                       {
-                        "x": 50.5,
-                        "y": 16.5
+                        "x": 9,
+                        "y": 33
                       },
                       {
-                        "x": 82,
-                        "y": 42
+                        "x": 40,
+                        "y": 29.5
+                      },
+                      {
+                        "x": 51,
+                        "y": 21
+                      },
+                      {
+                        "x": 60,
+                        "y": 24
+                      },
+                      {
+                        "x": 60.5,
+                        "y": 50
+                      },
+                      {
+                        "x": 62.5,
+                        "y": 65.5
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 56
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 62
                       },
                       {
                         "x": 62,
@@ -308,12 +336,16 @@
                         "y": 94.5
                       },
                       {
+                        "x": 37.5,
+                        "y": 77.5
+                      },
+                      {
                         "x": 12,
                         "y": 88.5
                       },
                       {
-                        "x": 0,
-                        "y": 82
+                        "x": 4,
+                        "y": 83.5
                       }
                     ]
                   ]
@@ -351,6 +383,10 @@
                         "y": 76
                       },
                       {
+                        "x": 6.5,
+                        "y": 52.5
+                      },
+                      {
                         "x": 0,
                         "y": 45
                       },
@@ -371,15 +407,35 @@
                         "y": 0
                       },
                       {
-                        "x": 62,
-                        "y": 43.5
+                        "x": 52,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 46,
+                        "y": 34.5
+                      },
+                      {
+                        "x": 56.5,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 43,
+                        "y": 56
                       },
                       {
                         "x": 43,
                         "y": 70.5
                       },
                       {
-                        "x": 23.5,
+                        "x": 33.5,
+                        "y": 70
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 60
+                      },
+                      {
+                        "x": 16,
                         "y": 76
                       }
                     ]
@@ -688,7 +744,7 @@
       "assetStoreId": "5f0df6131c9646dcbe98798196db5b6d806eb25564f86d2e119a084d1e20bf74",
       "name": "Restart_Button",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Black Decorated Button",
+      "variant": "Black Square Decorated Button",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -829,664 +885,6 @@
       ]
     },
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Score",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Distance",
-                "Text",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "+",
-                "1"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "folded": true,
-      "name": "Player Character Rotation",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Angle"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "=",
-                "-20"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "right",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "left",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Angle"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "=",
-                "20"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "right",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "left",
-                "False",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "left",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "20",
-                "Platformer_Character.rotation_speed",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "right",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "-20",
-                "Platformer_Character.rotation_speed",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "folded": true,
-      "name": "Dino Flying Rotation",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Angle"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "=",
-                "-20"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "right",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "left",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Angle"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "=",
-                "20"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "right",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "left",
-                "False",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "left",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "20",
-                "Platformer_Character.rotation_speed",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "right",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "-20",
-                "Platformer_Character.rotation_speed",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Background & Objects Moving",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "Rocks",
-                "+",
-                "-1 * SPEED * TimeDelta()"
-              ]
-            },
-            {
-              "type": {
-                "value": "TiledSpriteObject::XOffset"
-              },
-              "parameters": [
-                "Platform_Ground",
-                "+",
-                "SPEED * TimeDelta()"
-              ]
-            },
-            {
-              "type": {
-                "value": "TiledSpriteObject::XOffset"
-              },
-              "parameters": [
-                "Background",
-                "+",
-                "SPEED/2 * TimeDelta()"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "+",
-                "-1.3 * SPEED * TimeDelta()"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "folded": true,
-      "name": "Spawns",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "<=",
-                "-300"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Dino_Flying",
-                "1150",
-                "16",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "=",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Dino_Flying",
-                "=",
-                "-20"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Rocks",
-                "<=",
-                "-50"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Rocks",
-                "1100",
-                "167",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "Rocks",
-                "=",
-                "2"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Player",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [],
-      "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Space\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlatformBehavior::SimulateJumpKey"
-          },
-          "parameters": [
-            "Platformer_Character",
-            "PlatformerObject"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "350905_5450487-lq.mp3",
-                "",
-                "20",
-                ""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "Rocks",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "Dino_Flying",
-                "",
-                "",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "GAME_OVER",
-            "True",
-            ""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "punch-2-37333.mp3",
-                "",
-                "20",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "SPEED",
-                "=",
-                "0"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1495,1345 +893,2052 @@
           },
           "parameters": [
             "GAME_OVER",
-            "True",
+            "False",
             ""
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Restart_Button",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Leaderboard_Button",
-            ""
-          ]
-        }
-      ],
+      "actions": [],
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Score",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.10)"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "<",
-                "VariableLastNumber(leaderboard.9)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Distance",
+                    "Text",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "+",
+                    "1"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "SCORE"
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Player Character Rotation",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.9)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "=",
+                    "-20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "right",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "<",
-                "VariableLastNumber(leaderboard.8)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "=",
+                    "20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "left",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "-20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "leaderboard.9.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.9.value",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.10.name",
-                "=",
-                "leaderboard.9.name"
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Dino Flying Rotation",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.8)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "=",
+                    "-20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "right",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "<",
-                "VariableLastNumber(leaderboard.7)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "=",
+                    "20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "left",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "left",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "right",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "-20",
+                    "Platformer_Character.rotation_speed",
+                    ""
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "leaderboard.9.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.9.value",
-                "=",
-                "leaderboard.8.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.8.value",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.10.name",
-                "=",
-                "leaderboard.9.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.9.name",
-                "=",
-                "leaderboard.8.name"
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Spawns",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.7)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "<=",
+                    "-300"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Dino_Flying",
+                    "1150",
+                    "16",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "=",
+                    "-20"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "<",
-                "VariableLastNumber(leaderboard.6)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Rocks",
+                    "<=",
+                    "-50"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Rocks",
+                    "1100",
+                    "167",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Rocks",
+                    "=",
+                    "2"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "leaderboard.9.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.9.value",
-                "=",
-                "leaderboard.8.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.8.value",
-                "=",
-                "leaderboard.7.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.7.value",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.10.name",
-                "=",
-                "leaderboard.9.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.9.name",
-                "=",
-                "leaderboard.8.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.8.name",
-                "=",
-                "leaderboard.7.name"
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Background & Objects Moving",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.6)"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "<",
-                "VariableLastNumber(leaderboard.5)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Rocks",
+                    "+",
+                    "-1 * SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Platform_Ground",
+                    "+",
+                    "SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Background",
+                    "+",
+                    "SPEED/2 * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Dino_Flying",
+                    "+",
+                    "-1.3 * SPEED * TimeDelta()"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "leaderboard.9.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.9.value",
-                "=",
-                "leaderboard.8.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.8.value",
-                "=",
-                "leaderboard.7.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.7.value",
-                "=",
-                "leaderboard.6.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.6.value",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.10.name",
-                "=",
-                "leaderboard.9.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.9.name",
-                "=",
-                "leaderboard.8.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.8.name",
-                "=",
-                "leaderboard.7.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.7.name",
-                "=",
-                "leaderboard.6.name"
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Player",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.5)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateJumpKey"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "350905_5450487-lq.mp3",
+                        "",
+                        "20",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "<",
-                "VariableLastNumber(leaderboard.4)"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "leaderboard.9.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.9.value",
-                "=",
-                "leaderboard.8.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.8.value",
-                "=",
-                "leaderboard.7.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.7.value",
-                "=",
-                "leaderboard.6.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.6.value",
-                "=",
-                "leaderboard.5.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.5.value",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.10.name",
-                "=",
-                "leaderboard.9.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.9.name",
-                "=",
-                "leaderboard.8.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.8.name",
-                "=",
-                "leaderboard.7.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.7.name",
-                "=",
-                "leaderboard.6.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.6.name",
-                "=",
-                "leaderboard.5.name"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.4)"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "<",
-                "VariableLastNumber(leaderboard.3)"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "leaderboard.9.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.9.value",
-                "=",
-                "leaderboard.8.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.8.value",
-                "=",
-                "leaderboard.7.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.7.value",
-                "=",
-                "leaderboard.6.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.6.value",
-                "=",
-                "leaderboard.5.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.5.value",
-                "=",
-                "leaderboard.4.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.4.value",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.10.name",
-                "=",
-                "leaderboard.9.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.9.name",
-                "=",
-                "leaderboard.8.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.8.name",
-                "=",
-                "leaderboard.7.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.7.name",
-                "=",
-                "leaderboard.6.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.6.name",
-                "=",
-                "leaderboard.5.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.5.name",
-                "=",
-                "leaderboard.4.name"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.3)"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "<",
-                "VariableLastNumber(leaderboard.2)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "Rocks",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "Dino_Flying",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "GAME_OVER",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "Animation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "90",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "punch-2-37333.mp3",
+                        "",
+                        "20",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SPEED",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "leaderboard.9.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.9.value",
-                "=",
-                "leaderboard.8.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.8.value",
-                "=",
-                "leaderboard.7.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.7.value",
-                "=",
-                "leaderboard.6.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.6.value",
-                "=",
-                "leaderboard.5.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.5.value",
-                "=",
-                "leaderboard.4.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.4.value",
-                "=",
-                "leaderboard.3.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.3.value",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.10.name",
-                "=",
-                "leaderboard.9.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.9.name",
-                "=",
-                "leaderboard.8.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.8.name",
-                "=",
-                "leaderboard.7.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.7.name",
-                "=",
-                "leaderboard.6.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.6.name",
-                "=",
-                "leaderboard.5.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.5.name",
-                "=",
-                "leaderboard.4.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.4.name",
-                "=",
-                "leaderboard.3.name"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.2)"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                "<",
-                "VariableLastNumber(leaderboard.1)"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "leaderboard.9.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.9.value",
-                "=",
-                "leaderboard.8.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.8.value",
-                "=",
-                "leaderboard.7.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.7.value",
-                "=",
-                "leaderboard.6.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.6.value",
-                "=",
-                "leaderboard.5.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.5.value",
-                "=",
-                "leaderboard.4.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.4.value",
-                "=",
-                "leaderboard.3.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.3.value",
-                "=",
-                "leaderboard.2.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.2.value",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.10.name",
-                "=",
-                "leaderboard.9.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.9.name",
-                "=",
-                "leaderboard.8.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.8.name",
-                "=",
-                "leaderboard.7.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.7.name",
-                "=",
-                "leaderboard.6.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.6.name",
-                "=",
-                "leaderboard.5.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.5.name",
-                "=",
-                "leaderboard.4.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.4.name",
-                "=",
-                "leaderboard.3.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.3.name",
-                "=",
-                "leaderboard.2.name"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "SCORE",
-                ">",
-                "VariableLastNumber(leaderboard.1)"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.10.value",
-                "=",
-                "leaderboard.9.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.9.value",
-                "=",
-                "leaderboard.8.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.8.value",
-                "=",
-                "leaderboard.7.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.7.value",
-                "=",
-                "leaderboard.6.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.6.value",
-                "=",
-                "leaderboard.5.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.5.value",
-                "=",
-                "leaderboard.4.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.4.value",
-                "=",
-                "leaderboard.3.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.3.value",
-                "=",
-                "leaderboard.2.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.2.value",
-                "=",
-                "leaderboard.1.value"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "leaderboard.1.value",
-                "=",
-                "SCORE"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.10.name",
-                "=",
-                "leaderboard.9.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.9.name",
-                "=",
-                "leaderboard.8.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.8.name",
-                "=",
-                "leaderboard.7.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.7.name",
-                "=",
-                "leaderboard.6.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.6.name",
-                "=",
-                "leaderboard.5.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.5.name",
-                "=",
-                "leaderboard.4.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.4.name",
-                "=",
-                "leaderboard.3.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.3.name",
-                "=",
-                "leaderboard.2.name"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "leaderboard.2.name",
-                "=",
-                "leaderboard.1.name"
-              ]
-            }
-          ]
+          "parameters": []
         }
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "UI Buttons",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "Restart_Button",
-            ""
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GAME_OVER",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Restart_Button",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Leaderboard_Button",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.10)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "VariableLastNumber(leaderboard.9)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "SCORE"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.9)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "VariableLastNumber(leaderboard.8)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "leaderboard.9.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.value",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.name",
+                    "=",
+                    "leaderboard.9.name"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.8)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "VariableLastNumber(leaderboard.7)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "leaderboard.9.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.value",
+                    "=",
+                    "leaderboard.8.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.value",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.name",
+                    "=",
+                    "leaderboard.9.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.name",
+                    "=",
+                    "leaderboard.8.name"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.7)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "VariableLastNumber(leaderboard.6)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "leaderboard.9.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.value",
+                    "=",
+                    "leaderboard.8.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.value",
+                    "=",
+                    "leaderboard.7.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.value",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.name",
+                    "=",
+                    "leaderboard.9.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.name",
+                    "=",
+                    "leaderboard.8.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.name",
+                    "=",
+                    "leaderboard.7.name"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.6)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "VariableLastNumber(leaderboard.5)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "leaderboard.9.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.value",
+                    "=",
+                    "leaderboard.8.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.value",
+                    "=",
+                    "leaderboard.7.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.value",
+                    "=",
+                    "leaderboard.6.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.value",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.name",
+                    "=",
+                    "leaderboard.9.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.name",
+                    "=",
+                    "leaderboard.8.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.name",
+                    "=",
+                    "leaderboard.7.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.name",
+                    "=",
+                    "leaderboard.6.name"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.5)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "VariableLastNumber(leaderboard.4)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "leaderboard.9.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.value",
+                    "=",
+                    "leaderboard.8.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.value",
+                    "=",
+                    "leaderboard.7.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.value",
+                    "=",
+                    "leaderboard.6.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.value",
+                    "=",
+                    "leaderboard.5.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.5.value",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.name",
+                    "=",
+                    "leaderboard.9.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.name",
+                    "=",
+                    "leaderboard.8.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.name",
+                    "=",
+                    "leaderboard.7.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.name",
+                    "=",
+                    "leaderboard.6.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.name",
+                    "=",
+                    "leaderboard.5.name"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.4)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "VariableLastNumber(leaderboard.3)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "leaderboard.9.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.value",
+                    "=",
+                    "leaderboard.8.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.value",
+                    "=",
+                    "leaderboard.7.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.value",
+                    "=",
+                    "leaderboard.6.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.value",
+                    "=",
+                    "leaderboard.5.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.5.value",
+                    "=",
+                    "leaderboard.4.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.4.value",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.name",
+                    "=",
+                    "leaderboard.9.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.name",
+                    "=",
+                    "leaderboard.8.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.name",
+                    "=",
+                    "leaderboard.7.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.name",
+                    "=",
+                    "leaderboard.6.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.name",
+                    "=",
+                    "leaderboard.5.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.5.name",
+                    "=",
+                    "leaderboard.4.name"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.3)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "VariableLastNumber(leaderboard.2)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "leaderboard.9.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.value",
+                    "=",
+                    "leaderboard.8.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.value",
+                    "=",
+                    "leaderboard.7.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.value",
+                    "=",
+                    "leaderboard.6.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.value",
+                    "=",
+                    "leaderboard.5.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.5.value",
+                    "=",
+                    "leaderboard.4.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.4.value",
+                    "=",
+                    "leaderboard.3.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.3.value",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.name",
+                    "=",
+                    "leaderboard.9.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.name",
+                    "=",
+                    "leaderboard.8.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.name",
+                    "=",
+                    "leaderboard.7.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.name",
+                    "=",
+                    "leaderboard.6.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.name",
+                    "=",
+                    "leaderboard.5.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.5.name",
+                    "=",
+                    "leaderboard.4.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.4.name",
+                    "=",
+                    "leaderboard.3.name"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.2)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "VariableLastNumber(leaderboard.1)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "leaderboard.9.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.value",
+                    "=",
+                    "leaderboard.8.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.value",
+                    "=",
+                    "leaderboard.7.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.value",
+                    "=",
+                    "leaderboard.6.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.value",
+                    "=",
+                    "leaderboard.5.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.5.value",
+                    "=",
+                    "leaderboard.4.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.4.value",
+                    "=",
+                    "leaderboard.3.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.3.value",
+                    "=",
+                    "leaderboard.2.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.2.value",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.name",
+                    "=",
+                    "leaderboard.9.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.name",
+                    "=",
+                    "leaderboard.8.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.name",
+                    "=",
+                    "leaderboard.7.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.name",
+                    "=",
+                    "leaderboard.6.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.name",
+                    "=",
+                    "leaderboard.5.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.5.name",
+                    "=",
+                    "leaderboard.4.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.4.name",
+                    "=",
+                    "leaderboard.3.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.3.name",
+                    "=",
+                    "leaderboard.2.name"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    ">",
+                    "VariableLastNumber(leaderboard.1)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.value",
+                    "=",
+                    "leaderboard.9.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.value",
+                    "=",
+                    "leaderboard.8.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.value",
+                    "=",
+                    "leaderboard.7.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.value",
+                    "=",
+                    "leaderboard.6.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.value",
+                    "=",
+                    "leaderboard.5.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.5.value",
+                    "=",
+                    "leaderboard.4.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.4.value",
+                    "=",
+                    "leaderboard.3.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.3.value",
+                    "=",
+                    "leaderboard.2.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.2.value",
+                    "=",
+                    "leaderboard.1.value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.1.value",
+                    "=",
+                    "SCORE"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.10.name",
+                    "=",
+                    "leaderboard.9.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.9.name",
+                    "=",
+                    "leaderboard.8.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.8.name",
+                    "=",
+                    "leaderboard.7.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.7.name",
+                    "=",
+                    "leaderboard.6.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.6.name",
+                    "=",
+                    "leaderboard.5.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.5.name",
+                    "=",
+                    "leaderboard.4.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.4.name",
+                    "=",
+                    "leaderboard.3.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.3.name",
+                    "=",
+                    "leaderboard.2.name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "leaderboard.2.name",
+                    "=",
+                    "leaderboard.1.name"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Restart_Button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Game Scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Leaderboard_Button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Leaderboard Scene\"",
+                ""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Game Scene\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "Leaderboard_Button",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Leaderboard Scene\"",
-            ""
-          ]
-        }
-      ]
+      "parameters": []
     }
   ],
   "layers": [
@@ -2893,7 +2998,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "MobileControls",
+      "name": "UI",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
