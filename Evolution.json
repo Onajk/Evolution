@@ -485,6 +485,172 @@
   "objectsGroups": [],
   "variables": [
     {
+      "name": "leaderboard",
+      "type": "structure",
+      "children": [
+        {
+          "name": "1",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test1"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "name": "10",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test10"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "2",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test2"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "name": "3",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test3"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "name": "4",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test4"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "name": "5",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test5"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "name": "6",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test6"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "name": "7",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test7"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "name": "8",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test8"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "name": "9",
+          "type": "structure",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "value": "test9"
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "SPEED",
       "type": "number",
       "value": 400
@@ -506,7 +672,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/ending-scene"
+      "referenceTo": "/layouts/leaderboard-scene"
     }
   ],
   "externalEvents": [],
