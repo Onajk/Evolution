@@ -533,60 +533,11 @@
               ]
             }
           ]
-        },
-        {
-          "name": "Rocks",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Hazard3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 59,
-                        "y": 1
-                      },
-                      {
-                        "x": 59,
-                        "y": 34
-                      },
-                      {
-                        "x": 1,
-                        "y": 34
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Dino_Flying",
       "type": "Sprite",
@@ -647,16 +598,48 @@
                         "y": 1
                       },
                       {
+                        "x": 22,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 0
+                      },
+                      {
+                        "x": 43,
+                        "y": 22.5
+                      },
+                      {
+                        "x": 58,
+                        "y": 7
+                      },
+                      {
                         "x": 87,
                         "y": 1
                       },
                       {
-                        "x": 87,
+                        "x": 68,
+                        "y": 25
+                      },
+                      {
+                        "x": 56,
+                        "y": 32
+                      },
+                      {
+                        "x": 60,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 48.5,
                         "y": 47
                       },
                       {
-                        "x": 2,
-                        "y": 47
+                        "x": 20.5,
+                        "y": 29
+                      },
+                      {
+                        "x": 1.5,
+                        "y": 12
                       }
                     ]
                   ]
@@ -1317,6 +1300,35 @@
           "parameters": [
             "Platformer_Character",
             "Rocks",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "CurrentSceneName()",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Platformer_Character",
+            "Dino_Flying",
             "",
             "",
             ""
