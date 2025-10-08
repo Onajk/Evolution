@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6455105703311707,
+    "zoomFactor": 0.9934433498259921,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1522,16 +1522,17 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "Obstacle IR4",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Obstacle IR4.png",
+                  "image": "Obstacle IR4",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2338,6 +2339,16 @@
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "100"
+                  ]
                 }
               ],
               "actions": [
@@ -2380,6 +2391,16 @@
                 },
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SCORE",
+                    "<",
+                    "200"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -2394,7 +2415,7 @@
                     "",
                     "Rocks2",
                     "1122",
-                    "162",
+                    "138",
                     ""
                   ]
                 },
@@ -3091,16 +3112,7 @@
             "",
             "Rocks2",
             "1122",
-            "162",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Rocks",
+            "138",
             ""
           ]
         },
@@ -3113,6 +3125,18 @@
             "Animation",
             "=",
             "\"2\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "SUCCESS CHIME Ascending Sparkle 06.wav",
+            "",
+            "20",
+            ""
           ]
         }
       ]
@@ -3168,15 +3192,6 @@
         },
         {
           "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Rocks2",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "AnimatableCapability::AnimatableBehavior::SetName"
           },
           "parameters": [
@@ -3184,6 +3199,18 @@
             "Animation",
             "=",
             "\"3\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "SUCCESS CHIME Ascending Sparkle 06.wav",
+            "",
+            "20",
+            ""
           ]
         }
       ]

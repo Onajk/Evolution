@@ -537,6 +537,34 @@
         "name": "character DA 2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Obstacle IR4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Obstacle IR4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "SUCCESS CHIME Ascending Sparkle 06.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "SUCCESS CHIME Ascending Sparkle 06.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "SUCCESS CHIME Ascending Sparkle 09.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "SUCCESS CHIME Ascending Sparkle 09.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
