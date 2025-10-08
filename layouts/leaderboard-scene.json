@@ -33,8 +33,8 @@
       "layer": "",
       "name": "LeaderboardText",
       "persistentUuid": "ba27cf17-9b36-4531-96fe-ac329cfd197f",
-      "width": 1920,
-      "x": -398,
+      "width": 1070,
+      "x": 19,
       "y": 5,
       "zOrder": 1,
       "numberProperties": [],
@@ -579,6 +579,22 @@
       "x": 873,
       "y": 818,
       "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BackToMenu",
+      "persistentUuid": "5693d9b8-8b8b-4eea-a063-53706cad5a5e",
+      "width": 0,
+      "x": 0,
+      "y": 96,
+      "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1536,6 +1552,24 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+      "name": "BackToMenu",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Floating Out Button Dark Blue",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 2,
+        "BottomPadding": 4,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0,
+        "LabelText": "Button"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1606,6 +1640,9 @@
       },
       {
         "objectName": "UserValue10"
+      },
+      {
+        "objectName": "BackToMenu"
       }
     ]
   },
@@ -1852,6 +1889,32 @@
             "Text",
             "=",
             "ToString(VariableLastNumber(leaderboard.10))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "BackToMenu",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Menu Scene\"",
+            ""
           ]
         }
       ]
