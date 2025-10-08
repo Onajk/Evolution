@@ -36,7 +36,7 @@
   ],
   "variables": [
     {
-      "name": "gameStatus",
+      "name": "isPlayerRunning",
       "type": "boolean",
       "value": false
     }
@@ -132,7 +132,7 @@
       "persistentUuid": "d4c6be61-a147-4fce-a76d-e1338fcb7047",
       "width": 0,
       "x": 1185,
-      "y": 25,
+      "y": 16,
       "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
@@ -704,7 +704,17 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "gameStatus",
+            "isPlayerRunning",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "GAME_OVER",
             "False",
             ""
           ]
@@ -719,7 +729,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "gameStatus",
+            "isPlayerRunning",
             "False",
             ""
           ]
@@ -739,7 +749,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "gameStatus",
+            "isPlayerRunning",
             "True",
             ""
           ]
@@ -754,7 +764,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "gameStatus",
+            "isPlayerRunning",
             "True",
             ""
           ]
@@ -1186,7 +1196,7 @@
             "",
             "Dino_Flying",
             "1150",
-            "25",
+            "16",
             ""
           ]
         },
@@ -1316,6 +1326,16 @@
             "CurrentSceneName()",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "GAME_OVER",
+            "True",
+            ""
+          ]
         }
       ]
     },
@@ -1343,6 +1363,16 @@
           "parameters": [
             "",
             "CurrentSceneName()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "GAME_OVER",
+            "True",
             ""
           ]
         }

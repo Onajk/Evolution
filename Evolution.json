@@ -565,6 +565,7 @@
   "objectsGroups": [],
   "variables": [
     {
+      "folded": true,
       "name": "leaderboard",
       "type": "structure",
       "children": [
@@ -729,6 +730,11 @@
           ]
         }
       ]
+    },
+    {
+      "name": "GAME_OVER",
+      "type": "boolean",
+      "value": false
     },
     {
       "name": "SPEED",
