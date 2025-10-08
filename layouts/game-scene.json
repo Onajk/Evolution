@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410741054,
+    "zoomFactor": 0.3797121001948025,
     "windowMask": false
   },
   "objectsGroups": [
@@ -26,10 +26,7 @@
       "name": "RepeatingObjects",
       "objects": [
         {
-          "name": "Hazard"
-        },
-        {
-          "name": "Platform_Floating"
+          "name": "Rocks"
         },
         {
           "name": "Platform_Ground"
@@ -54,8 +51,8 @@
       "name": "Platformer_Character",
       "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
       "width": 128,
-      "x": 128,
-      "y": 552,
+      "x": 179,
+      "y": 750,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -65,49 +62,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1080,
-      "layer": "Background",
-      "locked": true,
-      "name": "Background",
-      "persistentUuid": "9d4a2623-239c-44d1-95a4-076307aa3170",
-      "width": 1920,
-      "x": 0,
-      "y": 0,
-      "zOrder": -10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1.0015649452269169,
-      "height": 96.15023474178402,
+      "height": 96,
       "keepRatio": true,
       "layer": "MobileControls",
       "name": "Distance",
       "persistentUuid": "fb74c02c-1e3b-40d9-9002-7ac7f9de6d3a",
-      "width": 1920,
-      "x": 0,
+      "width": 255,
+      "x": 1665,
       "y": 0,
       "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Point_Right",
-      "persistentUuid": "43d7ea15-3ff2-4a18-a3d7-00f1a8576afa",
-      "width": 64,
-      "x": 3648,
-      "y": 808,
-      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -118,7 +81,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Hazard",
+      "name": "Rocks",
       "persistentUuid": "bb9a1753-5c81-4642-bfad-ecb8f5dd8b99",
       "width": 0,
       "x": 608,
@@ -134,23 +97,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Hazard",
-      "persistentUuid": "bb07d70b-f803-44a4-8523-40ead1b878de",
-      "width": 0,
-      "x": 2432,
-      "y": 504,
-      "zOrder": -1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Hazard",
+      "name": "Rocks",
       "persistentUuid": "76adc262-15e3-4363-84ad-b8fcb4f47b66",
       "width": 0,
       "x": 1664,
@@ -166,103 +113,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Hazard",
-      "persistentUuid": "9a2462a8-82c0-4b4d-809d-c4b8c1d03d77",
-      "width": 0,
-      "x": 3072,
-      "y": 824,
-      "zOrder": -10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Hazard",
-      "persistentUuid": "ed23d3fd-a812-4fc4-99d9-7532dfa12310",
-      "width": 0,
-      "x": -960,
-      "y": 824,
-      "zOrder": -1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Point_Left",
-      "persistentUuid": "25d15929-d5d9-4bdd-ac47-4785f11bcc38",
-      "width": 0,
-      "x": -1152,
-      "y": 744,
-      "zOrder": 12,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Hazard",
-      "persistentUuid": "f3d9ffdb-b052-4b66-828f-3316619bc849",
-      "width": 0,
-      "x": -96,
-      "y": 664,
-      "zOrder": -1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Hazard",
-      "persistentUuid": "f0dbe7d9-b0a0-4694-953e-83fd4903b0c5",
-      "width": 0,
-      "x": 1312,
-      "y": 664,
-      "zOrder": -1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Hazard",
-      "persistentUuid": "e5a9c448-2a63-4b78-a8fb-2b6c5543a06d",
-      "width": 0,
-      "x": 2400,
-      "y": 824,
-      "zOrder": -10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Hazard",
+      "name": "Rocks",
       "persistentUuid": "4bd4fc68-2dd6-43de-81e3-95c7a8c4c419",
       "width": 0,
       "x": 1728,
@@ -274,263 +125,16 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0.9375,
-      "height": 120,
-      "keepRatio": true,
-      "layer": "MobileControls",
-      "locked": true,
-      "name": "JumpButton",
-      "persistentUuid": "58f2336d-aaa6-4549-be1f-64aeb618bcae",
-      "width": 120,
-      "x": 1750,
-      "y": 936,
-      "zOrder": 13,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Platform_Floating",
-      "persistentUuid": "25225444-2802-4a9f-ab02-e6dccb3b7973",
-      "width": 160,
-      "x": 3040,
+      "name": "Trees",
+      "persistentUuid": "d4c6be61-a147-4fce-a76d-e1338fcb7047",
+      "width": 0,
+      "x": 1967,
       "y": 552,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Floating",
-      "persistentUuid": "9874b070-ad06-4b95-bdcf-4d1f5f00f5e9",
-      "width": 160,
-      "x": -864,
-      "y": 712,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Floating",
-      "persistentUuid": "ac6d39b2-63f8-4273-b5aa-a5708f3b381c",
-      "width": 416,
-      "x": 1088,
-      "y": 712,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Floating",
-      "persistentUuid": "ec41931e-33b2-49d2-850c-a6c17e9cb8ef",
-      "width": 224,
-      "x": 1888,
-      "y": 712,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Floating",
-      "persistentUuid": "9f90f83f-3822-4583-9fd4-90e794df6abf",
-      "width": 384,
-      "x": 2208,
-      "y": 552,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "e661434d-30b8-4324-9300-22cf71458c2c",
-      "width": 480,
-      "x": 3168,
-      "y": 872,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "9208e028-5b05-46e0-8c56-1641c34aabbc",
-      "width": 480,
-      "x": 2688,
-      "y": 872,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "4314f016-7991-4e74-99ef-70114d4102d2",
-      "width": 480,
-      "x": 2208,
-      "y": 872,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "82a6e723-f655-4ebe-b590-8d7bf7b84758",
-      "width": 480,
-      "x": 1728,
-      "y": 872,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "bf33f3e0-b7ba-4c5c-8f44-09ac017448f7",
-      "width": 480,
-      "x": 1248,
-      "y": 872,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "f33f7e2d-131e-4b0f-a9bc-d2fb124b122f",
-      "width": 480,
-      "x": 768,
-      "y": 872,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "a3b08c09-cf7b-4f7d-977f-9276b452ff71",
-      "width": 480,
-      "x": 288,
-      "y": 872,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "6d92f501-03b6-41a5-a5df-8d3d36ec01bc",
-      "width": 480,
-      "x": -192,
-      "y": 872,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "a8d2a06f-2005-4bb0-85fc-de4864cef0db",
-      "width": 480,
-      "x": -672,
-      "y": 872,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "52e518b8-e8fd-49c9-9e88-74b9e6112ac3",
-      "width": 480,
-      "x": -1152,
-      "y": 872,
-      "zOrder": 15,
+      "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -541,62 +145,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Hazard",
-      "persistentUuid": "49eeba0b-28de-4937-b1b1-99f0853ba497",
+      "name": "Platform_Ground",
+      "persistentUuid": "74e22a93-870b-49fd-b2d8-cd552b7761ab",
       "width": 0,
-      "x": -480,
-      "y": 824,
-      "zOrder": -1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Hazard",
-      "persistentUuid": "e6322905-fb56-461a-9c33-978282ad3e94",
-      "width": 0,
-      "x": -1024,
-      "y": 824,
-      "zOrder": -1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Floating",
-      "persistentUuid": "c690cdb2-b1f5-42e9-b2cb-f52a630298fd",
-      "width": 416,
-      "x": -224,
-      "y": 712,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Floating",
-      "persistentUuid": "304575f2-ed82-475e-a89a-73d5f4c304aa",
-      "width": 128,
-      "x": 2816,
-      "y": 712,
-      "zOrder": 14,
+      "x": -500,
+      "y": 872,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -613,6 +167,7 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "ignoreDefaultControls": true,
@@ -633,14 +188,13 @@
           "yGrabOffset": 0
         },
         {
-          "isFolded": true,
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera",
           "LeftwardSpeed": 0.9,
           "RightwardSpeed": 0.9,
           "UpwardSpeed": 0.9,
           "DownwardSpeed": 0.9,
-          "FollowOnX": true,
+          "FollowOnX": false,
           "FollowOnY": false,
           "FollowFreeAreaLeft": 0,
           "FollowFreeAreaRight": 0,
@@ -688,16 +242,17 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "Platformer_Character",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\StartingPlayer.png",
+                  "image": "Platformer_Character15",
                   "points": [
                     {
                       "name": "Left",
@@ -724,20 +279,302 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 2
+                        "x": 32,
+                        "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 2
+                        "x": 72,
+                        "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 72,
+                        "y": 128
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 32,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Platformer_Character16",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 128
+                      },
+                      {
+                        "x": 32,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Platformer_Character17",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 128
+                      },
+                      {
+                        "x": 32,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Platformer_Character18",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 128
+                      },
+                      {
+                        "x": 32,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Platformer_Character19",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 128
+                      },
+                      {
+                        "x": 32,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Platformer_Character20",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 128
+                      },
+                      {
+                        "x": 32,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Platformer_Character21",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 0
+                      },
+                      {
+                        "x": 72,
+                        "y": 128
+                      },
+                      {
+                        "x": 32,
+                        "y": 128
                       }
                     ]
                   ]
@@ -750,22 +587,11 @@
     },
     {
       "assetStoreId": "",
-      "height": 64,
-      "name": "Background",
-      "texture": "assets\\Background.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 64,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "height": 64,
+      "height": 16,
       "name": "Platform_Ground",
-      "texture": "assets\\StartingGround.png",
+      "texture": "assets\\StartingGround.png2",
       "type": "TiledSpriteObject::TiledSprite",
-      "width": 64,
+      "width": 3000,
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -824,135 +650,21 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Point_Right",
+      "name": "Rocks",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "animations": [
+      "behaviors": [
         {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\SpawnPoint.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
+          "extraBorder": 300,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside"
         }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Hazard",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
+      ],
       "animations": [
         {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\StartingHazard.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 5,
-                        "y": 3
-                      },
-                      {
-                        "x": 59,
-                        "y": 3
-                      },
-                      {
-                        "x": 59,
-                        "y": 61
-                      },
-                      {
-                        "x": 5,
-                        "y": 61
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Point_Left",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "assets\\DeletePoint",
+          "name": "Rocks",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -962,7 +674,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\SpawnPoint.png",
+                  "image": "Hazard3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -978,20 +690,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 8,
+                        "y": 20
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 60,
+                        "y": 20
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 60,
+                        "y": 52
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 8,
+                        "y": 52
                       }
                     ]
                   ]
@@ -1003,42 +715,38 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "9c727020616afdd6ba786b8af206a90481f07db0ca175ed6a4cc5b7e01c66d06",
-      "name": "JumpButton",
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Trees",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
       "behaviors": [
         {
-          "name": "ButtonFSM",
-          "type": "ButtonStates::ButtonFSM",
-          "ShouldCheckHovering": true,
-          "State": "Idle",
-          "TouchId": 0,
-          "TouchIsInside": false,
-          "MouseIsInside": false,
-          "Index": 2.0247e-320
+          "extraBorder": 600,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside"
         }
       ],
       "animations": [
         {
-          "name": "",
+          "name": "NewSprite",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Top arrow button.png",
+                  "image": "NewSprite2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 40,
-                    "y": 40
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1050,35 +758,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 40
+                        "y": 7
                       },
                       {
-                        "x": 10,
-                        "y": 10
+                        "x": 320,
+                        "y": 7
                       },
                       {
-                        "x": 40,
-                        "y": 0
+                        "x": 320,
+                        "y": 320
                       },
                       {
-                        "x": 70,
-                        "y": 10
-                      },
-                      {
-                        "x": 80,
-                        "y": 40
-                      },
-                      {
-                        "x": 70,
-                        "y": 70
-                      },
-                      {
-                        "x": 40,
-                        "y": 80
-                      },
-                      {
-                        "x": 10,
-                        "y": 70
+                        "x": 0,
+                        "y": 320
                       }
                     ]
                   ]
@@ -1086,25 +778,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 64,
-      "name": "Platform_Floating",
-      "texture": "assets\\StartingGround.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 64,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "platformType": "Jumpthru",
-          "canBeGrabbed": false,
-          "yGrabOffset": 0
         }
       ]
     }
@@ -1119,30 +792,13 @@
         "objectName": "Platform_Ground"
       },
       {
-        "objectName": "Platform_Floating"
-      },
-      {
-        "objectName": "Hazard"
-      },
-      {
-        "objectName": "Background"
+        "objectName": "Rocks"
       },
       {
         "objectName": "Distance"
       },
       {
-        "objectName": "Point_Right"
-      },
-      {
-        "objectName": "Point_Left"
-      },
-      {
-        "folderName": "Mobile Controls",
-        "children": [
-          {
-            "objectName": "JumpButton"
-          }
-        ]
+        "objectName": "Trees"
       }
     ]
   },
@@ -1221,14 +877,165 @@
           ]
         }
       ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Trees",
+                "+",
+                "-1 * SPEED * TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Rocks",
+                "+",
+                "-1 * SPEED * TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::XOffset"
+              },
+              "parameters": [
+                "Platform_Ground",
+                "+",
+                "SPEED * TimeDelta()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Distance",
+                "Text",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Trees",
+            "<=",
+            "-400"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
       "actions": [
         {
           "type": {
-            "value": "PlatformBehavior::SimulateRightKey"
+            "value": "Create"
           },
           "parameters": [
-            "Platformer_Character",
-            "PlatformerObject"
+            "",
+            "Trees",
+            "1994",
+            "552",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Trees",
+            "=",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Rocks",
+            "<=",
+            "300"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Rocks",
+            "1994",
+            "824",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Rocks",
+            "=",
+            "2"
           ]
         }
       ]
@@ -1249,16 +1056,6 @@
               "parameters": [
                 "",
                 "\"Space\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ButtonStates::ButtonFSM::IsPressed"
-              },
-              "parameters": [
-                "JumpButton",
-                "ButtonFSM",
-                ""
               ]
             }
           ]
@@ -1285,7 +1082,7 @@
           },
           "parameters": [
             "Platformer_Character",
-            "Hazard",
+            "Rocks",
             "",
             "",
             ""
@@ -1302,180 +1099,6 @@
             "CurrentSceneName()",
             ""
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "gameStatus",
-            "True",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Distance",
-            "Text",
-            "=",
-            "ToString(floor(TimeFromStart()))"
-          ]
-        },
-        {
-          "type": {
-            "value": "TiledSpriteObject::XOffset"
-          },
-          "parameters": [
-            "Background",
-            "=",
-            "Platformer_Character.X()/2"
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreX"
-          },
-          "parameters": [
-            "Point_Left",
-            "=",
-            "Platformer_Character.PointX(\"Left\")"
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreX"
-          },
-          "parameters": [
-            "Point_Right",
-            "=",
-            "Platformer_Character.PointX(\"Right\")"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PosX"
-          },
-          "parameters": [
-            "RepeatingObjects",
-            "<",
-            "Point_Left.X()"
-          ]
-        }
-      ],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AjoutObjConcern"
-              },
-              "parameters": [
-                "",
-                "Platform_Ground"
-              ]
-            },
-            {
-              "type": {
-                "value": "PickNearest"
-              },
-              "parameters": [
-                "Platform_Ground",
-                "Point_Right.X()",
-                "Point_Right.Y()",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "FurthestRight_Platform_Ground",
-                "=",
-                "Platform_Ground.BoundingBoxRight()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PickedInstancesCount"
-              },
-              "parameters": [
-                "RepeatingObjects",
-                ">",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "RepeatingObjects",
-                "=",
-                "Point_Right.X()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PickedInstancesCount"
-              },
-              "parameters": [
-                "Platform_Ground",
-                ">",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "Platform_Ground",
-                "=",
-                "FurthestRight_Platform_Ground"
-              ]
-            }
-          ]
-        }
-      ],
-      "variables": [
-        {
-          "name": "FurthestRight_Platform_Ground",
-          "type": "number",
-          "value": 0
         }
       ]
     }
@@ -1548,10 +1171,6 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
-    },
-    {
-      "name": "ButtonFSM",
-      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",

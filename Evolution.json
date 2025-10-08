@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1920,
     "windowHeight": 1080,
-    "latestCompilationDirectory": "C:\\Users\\pkedzierski\\Documents\\GitHub\\backoffice-platform-frontend\\public\\evo",
+    "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -258,6 +258,222 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f0ede8843d544f6e84bc09299a8aabffbce558966f25af98f7b47ab1648217ce_Blue Button_Pressed.png",
           "name": "Blue Button_Pressed.png"
         }
+      },
+      {
+        "file": "assets/Platformer_Character.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character18",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character19",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character20",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Platformer_Character21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platformer_Character21",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hazard.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hazard",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hazard2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hazard2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hazard3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hazard3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_StartingGround.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\StartingGround.png2",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -267,7 +483,18 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "SPEED",
+      "type": "number",
+      "value": 400
+    },
+    {
+      "name": "SCORE",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

@@ -18,31 +18,25 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3645833333333333,
+    "zoomFactor": 0.4163025217733325,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [
-    {
-      "name": "menuStatus",
-      "type": "boolean",
-      "value": false
-    }
-  ],
+  "variables": [],
   "instances": [
     {
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 854,
+      "height": 1084,
       "keepRatio": true,
       "layer": "Background",
       "locked": true,
       "name": "LOGO",
       "persistentUuid": "65e0be13-5c42-4dad-840e-d71d33614b57",
-      "width": 1083,
-      "x": 420,
-      "y": 89,
+      "width": 1375,
+      "x": 272.5,
+      "y": -1,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -58,8 +52,8 @@
       "name": "StartButton",
       "persistentUuid": "79deaa12-7fd8-4a05-8f6d-e08b14603faa",
       "width": 405,
-      "x": 237,
-      "y": 800,
+      "x": 94,
+      "y": 871,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -75,8 +69,8 @@
       "name": "LeaderboardButton",
       "persistentUuid": "86b97896-2571-4973-9fb4-1fb78debe229",
       "width": 378,
-      "x": 1281,
-      "y": 800,
+      "x": 1463,
+      "y": 871,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -167,67 +161,6 @@
       "actions": [
         {
           "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "StartButton"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "LeaderboardButton"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "menuStatus",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "menuStatus",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnyKeyPressed"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "menuStatus",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "PlayMusic"
           },
           "parameters": [
@@ -236,90 +169,6 @@
             "yes",
             "10",
             "1.3"
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "StartButton",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "LeaderboardButton",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "menuStatus",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "MouseButtonFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Left\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "menuStatus",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlayMusic"
-          },
-          "parameters": [
-            "",
-            "a8c8916ac81f64f9904c4bdc5ce43bbdeb08331be4889455a2ecca7e38551a68_Finally See The Light.aac",
-            "yes",
-            "10",
-            "1.3"
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "StartButton",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "LeaderboardButton",
-            ""
           ]
         }
       ]
@@ -476,20 +325,16 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
-    },
-    {
-      "name": "Scale",
-      "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
