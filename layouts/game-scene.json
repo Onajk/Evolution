@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410741129,
+    "zoomFactor": 0.6455105703311707,
     "windowMask": false
   },
   "objectsGroups": [
@@ -326,7 +326,7 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -511,6 +511,558 @@
                       {
                         "x": 16,
                         "y": 76
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.3,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "character IR 1.png",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 56
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 53.5
+                      },
+                      {
+                        "x": 20.5,
+                        "y": 36
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 23.5
+                      },
+                      {
+                        "x": 18,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 11.5,
+                        "y": 41.5
+                      },
+                      {
+                        "x": 0.5,
+                        "y": 37
+                      },
+                      {
+                        "x": 4,
+                        "y": 28
+                      },
+                      {
+                        "x": 11.5,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 13
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 5
+                      },
+                      {
+                        "x": 51.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 61.5,
+                        "y": 5
+                      },
+                      {
+                        "x": 60,
+                        "y": 11.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 14.5
+                      },
+                      {
+                        "x": 60,
+                        "y": 30.5
+                      },
+                      {
+                        "x": 67.5,
+                        "y": 32.5
+                      },
+                      {
+                        "x": 62,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 48,
+                        "y": 41
+                      },
+                      {
+                        "x": 54.5,
+                        "y": 66
+                      },
+                      {
+                        "x": 61,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 65,
+                        "y": 70.5
+                      },
+                      {
+                        "x": 51,
+                        "y": 80
+                      },
+                      {
+                        "x": 46,
+                        "y": 77
+                      },
+                      {
+                        "x": 42,
+                        "y": 58.5
+                      },
+                      {
+                        "x": 34,
+                        "y": 54.5
+                      },
+                      {
+                        "x": 25,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 12.5,
+                        "y": 73.5
+                      },
+                      {
+                        "x": 6,
+                        "y": 73
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "character IR 2.png",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 71.5
+                      },
+                      {
+                        "x": 11,
+                        "y": 59
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 53
+                      },
+                      {
+                        "x": 1.5,
+                        "y": 47.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 37
+                      },
+                      {
+                        "x": 14,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 26,
+                        "y": 15
+                      },
+                      {
+                        "x": 30,
+                        "y": 3
+                      },
+                      {
+                        "x": 48,
+                        "y": 3.5
+                      },
+                      {
+                        "x": 48.5,
+                        "y": 21
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 35
+                      },
+                      {
+                        "x": 51,
+                        "y": 40.5
+                      },
+                      {
+                        "x": 42,
+                        "y": 54
+                      },
+                      {
+                        "x": 36,
+                        "y": 63
+                      },
+                      {
+                        "x": 35,
+                        "y": 70
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 71.5
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 79
+                      },
+                      {
+                        "x": 9.5,
+                        "y": 84
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.3,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "character DA 1.png",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 54.5
+                      },
+                      {
+                        "x": 21.5,
+                        "y": 58
+                      },
+                      {
+                        "x": 22.5,
+                        "y": 48.5
+                      },
+                      {
+                        "x": 6.5,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 2,
+                        "y": 37.5
+                      },
+                      {
+                        "x": 12,
+                        "y": 14
+                      },
+                      {
+                        "x": 42,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 47,
+                        "y": 3
+                      },
+                      {
+                        "x": 63,
+                        "y": 2
+                      },
+                      {
+                        "x": 61.5,
+                        "y": 31
+                      },
+                      {
+                        "x": 67,
+                        "y": 36
+                      },
+                      {
+                        "x": 68,
+                        "y": 48
+                      },
+                      {
+                        "x": 51,
+                        "y": 41
+                      },
+                      {
+                        "x": 48,
+                        "y": 49
+                      },
+                      {
+                        "x": 55,
+                        "y": 57
+                      },
+                      {
+                        "x": 56,
+                        "y": 68.5
+                      },
+                      {
+                        "x": 68.5,
+                        "y": 65
+                      },
+                      {
+                        "x": 70,
+                        "y": 70
+                      },
+                      {
+                        "x": 50.5,
+                        "y": 78.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 60.5
+                      },
+                      {
+                        "x": 35.5,
+                        "y": 57
+                      },
+                      {
+                        "x": 25,
+                        "y": 68
+                      },
+                      {
+                        "x": 16,
+                        "y": 62.5
+                      },
+                      {
+                        "x": 13,
+                        "y": 73.5
+                      },
+                      {
+                        "x": 9,
+                        "y": 75
+                      },
+                      {
+                        "x": 5,
+                        "y": 66
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "character DA 2.png",
+                  "points": [
+                    {
+                      "name": "Left",
+                      "x": -1280,
+                      "y": 0
+                    },
+                    {
+                      "name": "Right",
+                      "x": 3520,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 63
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 60
+                      },
+                      {
+                        "x": 12,
+                        "y": 51
+                      },
+                      {
+                        "x": 2.5,
+                        "y": 50.5
+                      },
+                      {
+                        "x": 1,
+                        "y": 23.5
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 13
+                      },
+                      {
+                        "x": 33,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 2
+                      },
+                      {
+                        "x": 50.5,
+                        "y": 1.5
+                      },
+                      {
+                        "x": 53.5,
+                        "y": 14.5
+                      },
+                      {
+                        "x": 50,
+                        "y": 28.5
+                      },
+                      {
+                        "x": 46.5,
+                        "y": 30.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 40
+                      },
+                      {
+                        "x": 52.5,
+                        "y": 42
+                      },
+                      {
+                        "x": 54,
+                        "y": 51
+                      },
+                      {
+                        "x": 42.5,
+                        "y": 51.5
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 67
+                      },
+                      {
+                        "x": 52.5,
+                        "y": 67
+                      },
+                      {
+                        "x": 54,
+                        "y": 71.5
+                      },
+                      {
+                        "x": 33.5,
+                        "y": 76
+                      },
+                      {
+                        "x": 33,
+                        "y": 56.5
+                      },
+                      {
+                        "x": 27.5,
+                        "y": 54.5
+                      },
+                      {
+                        "x": 27,
+                        "y": 68
+                      },
+                      {
+                        "x": 17.5,
+                        "y": 70.5
+                      },
+                      {
+                        "x": 22,
+                        "y": 85
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 84
+                      },
+                      {
+                        "x": 4.5,
+                        "y": 67.5
                       }
                     ]
                   ]
@@ -952,6 +1504,162 @@
           "yGrabOffset": 0
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Rocks2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 350
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Obstacle IR4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 14.5
+                      },
+                      {
+                        "x": 6,
+                        "y": 1
+                      },
+                      {
+                        "x": 25.5,
+                        "y": 3
+                      },
+                      {
+                        "x": 30.5,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 30,
+                        "y": 37
+                      },
+                      {
+                        "x": 5,
+                        "y": 37.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Rocks3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 350
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Obstacle DA4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4.5,
+                        "y": 6.5
+                      },
+                      {
+                        "x": 32.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 35,
+                        "y": 2
+                      },
+                      {
+                        "x": 40.5,
+                        "y": 1.5
+                      },
+                      {
+                        "x": 40.5,
+                        "y": 6.5
+                      },
+                      {
+                        "x": 47,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 47,
+                        "y": 51
+                      },
+                      {
+                        "x": 3.5,
+                        "y": 50.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -971,6 +1679,12 @@
       },
       {
         "objectName": "Rocks"
+      },
+      {
+        "objectName": "Rocks2"
+      },
+      {
+        "objectName": "Rocks3"
       },
       {
         "objectName": "Distance"
@@ -1650,6 +2364,96 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Rocks2",
+                    "<=",
+                    "-50"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Rocks2",
+                    "1122",
+                    "162",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Rocks2",
+                    "=",
+                    "20"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Rocks3",
+                    "<=",
+                    "-50"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Rocks3",
+                    "1177",
+                    "147",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Rocks3",
+                    "=",
+                    "20"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -1673,6 +2477,26 @@
                   },
                   "parameters": [
                     "Rocks",
+                    "+",
+                    "-1 * SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Rocks2",
+                    "+",
+                    "-1 * SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Rocks3",
                     "+",
                     "-1 * SPEED * TimeDelta()"
                   ]
@@ -1829,6 +2653,30 @@
                       "parameters": [
                         "Platformer_Character",
                         "Rocks",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "Rocks2",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "Rocks3",
                         "",
                         "",
                         ""
@@ -2234,6 +3082,38 @@
           "parameters": [
             "Platform_Ground"
           ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Rocks2",
+            "1122",
+            "162",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Rocks",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Platformer_Character",
+            "Animation",
+            "=",
+            "\"2\""
+          ]
         }
       ]
     },
@@ -2272,6 +3152,38 @@
           },
           "parameters": [
             "Platform_Ground2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Rocks3",
+            "1177",
+            "147",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Rocks2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Platformer_Character",
+            "Animation",
+            "=",
+            "\"3\""
           ]
         }
       ]

@@ -473,6 +473,70 @@
         "name": "DA ground 1100.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Obstacle IR 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Obstacle IR 3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Obstacle DA 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Obstacle DA 3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Obstacle IR4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Obstacle IR4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Obstacle DA4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Obstacle DA4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "character IR 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character IR 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "character IR 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character IR 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "character DA 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character DA 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "character DA 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character DA 2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
