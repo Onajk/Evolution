@@ -757,6 +757,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1319,16 +1320,6 @@
       "actions": [
         {
           "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "CurrentSceneName()",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "SetBooleanVariable"
           },
           "parameters": [
@@ -1358,6 +1349,34 @@
       "actions": [
         {
           "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "GAME_OVER",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GAME_OVER",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -1365,15 +1384,817 @@
             "CurrentSceneName()",
             ""
           ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.10)"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "<",
+                "VariableLastNumber(leaderboard.9)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
         },
         {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "GAME_OVER",
-            "True",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.9)"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "<",
+                "VariableLastNumber(leaderboard.8)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "leaderboard.9.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.9.value",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.8)"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "<",
+                "VariableLastNumber(leaderboard.7)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "leaderboard.9.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.9.value",
+                "=",
+                "leaderboard.8.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.8.value",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.7)"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "<",
+                "VariableLastNumber(leaderboard.6)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "leaderboard.9.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.9.value",
+                "=",
+                "leaderboard.8.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.8.value",
+                "=",
+                "leaderboard.7.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.7.value",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.6)"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "<",
+                "VariableLastNumber(leaderboard.5)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "leaderboard.9.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.9.value",
+                "=",
+                "leaderboard.8.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.8.value",
+                "=",
+                "leaderboard.7.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.7.value",
+                "=",
+                "leaderboard.6.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.6.value",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "<",
+                "VariableLastNumber(leaderboard.4)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "leaderboard.9.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.9.value",
+                "=",
+                "leaderboard.8.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.8.value",
+                "=",
+                "leaderboard.7.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.7.value",
+                "=",
+                "leaderboard.6.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.6.value",
+                "=",
+                "leaderboard.5.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.5.value",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.4)"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "<",
+                "VariableLastNumber(leaderboard.3)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "leaderboard.9.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.9.value",
+                "=",
+                "leaderboard.8.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.8.value",
+                "=",
+                "leaderboard.7.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.7.value",
+                "=",
+                "leaderboard.6.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.6.value",
+                "=",
+                "leaderboard.5.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.5.value",
+                "=",
+                "leaderboard.4.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.4.value",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.3)"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "<",
+                "VariableLastNumber(leaderboard.2)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "leaderboard.9.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.9.value",
+                "=",
+                "leaderboard.8.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.8.value",
+                "=",
+                "leaderboard.7.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.7.value",
+                "=",
+                "leaderboard.6.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.6.value",
+                "=",
+                "leaderboard.5.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.5.value",
+                "=",
+                "leaderboard.4.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.4.value",
+                "=",
+                "leaderboard.3.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.3.value",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                "<",
+                "VariableLastNumber(leaderboard.1)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "leaderboard.9.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.9.value",
+                "=",
+                "leaderboard.8.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.8.value",
+                "=",
+                "leaderboard.7.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.7.value",
+                "=",
+                "leaderboard.6.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.6.value",
+                "=",
+                "leaderboard.5.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.5.value",
+                "=",
+                "leaderboard.4.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.4.value",
+                "=",
+                "leaderboard.3.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.3.value",
+                "=",
+                "leaderboard.2.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.2.value",
+                "=",
+                "SCORE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SCORE",
+                ">",
+                "VariableLastNumber(leaderboard.1)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.10.value",
+                "=",
+                "leaderboard.9.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.9.value",
+                "=",
+                "leaderboard.8.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.8.value",
+                "=",
+                "leaderboard.7.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.7.value",
+                "=",
+                "leaderboard.6.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.6.value",
+                "=",
+                "leaderboard.5.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.5.value",
+                "=",
+                "leaderboard.4.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.4.value",
+                "=",
+                "leaderboard.3.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.3.value",
+                "=",
+                "leaderboard.2.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.2.value",
+                "=",
+                "leaderboard.1.value"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "leaderboard.1.value",
+                "=",
+                "SCORE"
+              ]
+            }
           ]
         }
       ]
