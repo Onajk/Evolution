@@ -240,10 +240,10 @@
       "effects": [],
       "behaviors": [
         {
-          "gravity": 1400,
-          "jumpSustainTime": 0.3,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "gravity": 1400,
+          "jumpSustainTime": 0.3,
           "jumpSpeed": 500,
           "ignoreDefaultControls": true,
           "acceleration": 1000,
@@ -1700,7 +1700,7 @@
                   "parameters": [
                     "Platformer_Character",
                     "90",
-                    "",
+                    "0",
                     ""
                   ]
                 }
@@ -1758,7 +1758,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1803,18 +1802,14 @@
                   "parameters": [
                     "SCORE",
                     ">",
-                    "VariableLastNumber(leaderboard.10)"
+                    "TOP_1"
                   ]
                 },
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [
-                    "SCORE",
-                    "<",
-                    "VariableLastNumber(leaderboard.9)"
-                  ]
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -1823,9 +1818,19 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "leaderboard.10.value",
+                    "TOP_2",
                     "=",
-                    "SCORE"
+                    "TOP_1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "TOP_1",
+                    "=",
+                    "floorTo(SCORE)"
                   ]
                 }
               ]
@@ -1840,7 +1845,7 @@
                   "parameters": [
                     "SCORE",
                     ">",
-                    "VariableLastNumber(leaderboard.9)"
+                    "TOP_2"
                   ]
                 },
                 {
@@ -1850,8 +1855,14 @@
                   "parameters": [
                     "SCORE",
                     "<",
-                    "VariableLastNumber(leaderboard.8)"
+                    "TOP_1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -1860,9 +1871,9 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "leaderboard.10.value",
+                    "TOP_3",
                     "=",
-                    "leaderboard.9.value"
+                    "TOP_2"
                   ]
                 },
                 {
@@ -1870,19 +1881,9 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "leaderboard.9.value",
+                    "TOP_2",
                     "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.name",
-                    "=",
-                    "leaderboard.9.name"
+                    "floorTo(SCORE)"
                   ]
                 }
               ]
@@ -1897,7 +1898,7 @@
                   "parameters": [
                     "SCORE",
                     ">",
-                    "VariableLastNumber(leaderboard.8)"
+                    "TOP_3"
                   ]
                 },
                 {
@@ -1907,8 +1908,14 @@
                   "parameters": [
                     "SCORE",
                     "<",
-                    "VariableLastNumber(leaderboard.7)"
+                    "TOP_2"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -1917,1138 +1924,9 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "leaderboard.10.value",
+                    "TOP_3",
                     "=",
-                    "leaderboard.9.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.value",
-                    "=",
-                    "leaderboard.8.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.value",
-                    "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.name",
-                    "=",
-                    "leaderboard.9.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.name",
-                    "=",
-                    "leaderboard.8.name"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    ">",
-                    "VariableLastNumber(leaderboard.7)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    "<",
-                    "VariableLastNumber(leaderboard.6)"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.value",
-                    "=",
-                    "leaderboard.9.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.value",
-                    "=",
-                    "leaderboard.8.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.value",
-                    "=",
-                    "leaderboard.7.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.value",
-                    "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.name",
-                    "=",
-                    "leaderboard.9.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.name",
-                    "=",
-                    "leaderboard.8.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.name",
-                    "=",
-                    "leaderboard.7.name"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    ">",
-                    "VariableLastNumber(leaderboard.6)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    "<",
-                    "VariableLastNumber(leaderboard.5)"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.value",
-                    "=",
-                    "leaderboard.9.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.value",
-                    "=",
-                    "leaderboard.8.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.value",
-                    "=",
-                    "leaderboard.7.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.value",
-                    "=",
-                    "leaderboard.6.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.value",
-                    "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.name",
-                    "=",
-                    "leaderboard.9.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.name",
-                    "=",
-                    "leaderboard.8.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.name",
-                    "=",
-                    "leaderboard.7.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.name",
-                    "=",
-                    "leaderboard.6.name"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    ">",
-                    "VariableLastNumber(leaderboard.5)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    "<",
-                    "VariableLastNumber(leaderboard.4)"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.value",
-                    "=",
-                    "leaderboard.9.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.value",
-                    "=",
-                    "leaderboard.8.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.value",
-                    "=",
-                    "leaderboard.7.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.value",
-                    "=",
-                    "leaderboard.6.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.value",
-                    "=",
-                    "leaderboard.5.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.5.value",
-                    "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.name",
-                    "=",
-                    "leaderboard.9.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.name",
-                    "=",
-                    "leaderboard.8.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.name",
-                    "=",
-                    "leaderboard.7.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.name",
-                    "=",
-                    "leaderboard.6.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.name",
-                    "=",
-                    "leaderboard.5.name"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    ">",
-                    "VariableLastNumber(leaderboard.4)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    "<",
-                    "VariableLastNumber(leaderboard.3)"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.value",
-                    "=",
-                    "leaderboard.9.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.value",
-                    "=",
-                    "leaderboard.8.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.value",
-                    "=",
-                    "leaderboard.7.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.value",
-                    "=",
-                    "leaderboard.6.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.value",
-                    "=",
-                    "leaderboard.5.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.5.value",
-                    "=",
-                    "leaderboard.4.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.4.value",
-                    "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.name",
-                    "=",
-                    "leaderboard.9.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.name",
-                    "=",
-                    "leaderboard.8.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.name",
-                    "=",
-                    "leaderboard.7.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.name",
-                    "=",
-                    "leaderboard.6.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.name",
-                    "=",
-                    "leaderboard.5.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.5.name",
-                    "=",
-                    "leaderboard.4.name"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    ">",
-                    "VariableLastNumber(leaderboard.3)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    "<",
-                    "VariableLastNumber(leaderboard.2)"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.value",
-                    "=",
-                    "leaderboard.9.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.value",
-                    "=",
-                    "leaderboard.8.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.value",
-                    "=",
-                    "leaderboard.7.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.value",
-                    "=",
-                    "leaderboard.6.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.value",
-                    "=",
-                    "leaderboard.5.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.5.value",
-                    "=",
-                    "leaderboard.4.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.4.value",
-                    "=",
-                    "leaderboard.3.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.3.value",
-                    "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.name",
-                    "=",
-                    "leaderboard.9.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.name",
-                    "=",
-                    "leaderboard.8.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.name",
-                    "=",
-                    "leaderboard.7.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.name",
-                    "=",
-                    "leaderboard.6.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.name",
-                    "=",
-                    "leaderboard.5.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.5.name",
-                    "=",
-                    "leaderboard.4.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.4.name",
-                    "=",
-                    "leaderboard.3.name"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    ">",
-                    "VariableLastNumber(leaderboard.2)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    "<",
-                    "VariableLastNumber(leaderboard.1)"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.value",
-                    "=",
-                    "leaderboard.9.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.value",
-                    "=",
-                    "leaderboard.8.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.value",
-                    "=",
-                    "leaderboard.7.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.value",
-                    "=",
-                    "leaderboard.6.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.value",
-                    "=",
-                    "leaderboard.5.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.5.value",
-                    "=",
-                    "leaderboard.4.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.4.value",
-                    "=",
-                    "leaderboard.3.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.3.value",
-                    "=",
-                    "leaderboard.2.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.2.value",
-                    "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.name",
-                    "=",
-                    "leaderboard.9.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.name",
-                    "=",
-                    "leaderboard.8.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.name",
-                    "=",
-                    "leaderboard.7.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.name",
-                    "=",
-                    "leaderboard.6.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.name",
-                    "=",
-                    "leaderboard.5.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.5.name",
-                    "=",
-                    "leaderboard.4.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.4.name",
-                    "=",
-                    "leaderboard.3.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.3.name",
-                    "=",
-                    "leaderboard.2.name"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SCORE",
-                    ">",
-                    "VariableLastNumber(leaderboard.1)"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.value",
-                    "=",
-                    "leaderboard.9.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.value",
-                    "=",
-                    "leaderboard.8.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.value",
-                    "=",
-                    "leaderboard.7.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.value",
-                    "=",
-                    "leaderboard.6.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.value",
-                    "=",
-                    "leaderboard.5.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.5.value",
-                    "=",
-                    "leaderboard.4.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.4.value",
-                    "=",
-                    "leaderboard.3.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.3.value",
-                    "=",
-                    "leaderboard.2.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.2.value",
-                    "=",
-                    "leaderboard.1.value"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.1.value",
-                    "=",
-                    "SCORE"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.10.name",
-                    "=",
-                    "leaderboard.9.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.9.name",
-                    "=",
-                    "leaderboard.8.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.8.name",
-                    "=",
-                    "leaderboard.7.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.7.name",
-                    "=",
-                    "leaderboard.6.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.6.name",
-                    "=",
-                    "leaderboard.5.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.5.name",
-                    "=",
-                    "leaderboard.4.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.4.name",
-                    "=",
-                    "leaderboard.3.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.3.name",
-                    "=",
-                    "leaderboard.2.name"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "leaderboard.2.name",
-                    "=",
-                    "leaderboard.1.name"
+                    "floorTo(SCORE)"
                   ]
                 }
               ]

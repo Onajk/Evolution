@@ -444,172 +444,6 @@
   "objectsGroups": [],
   "variables": [
     {
-      "name": "leaderboard",
-      "type": "structure",
-      "children": [
-        {
-          "name": "1",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "NotACheater"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 100
-            }
-          ]
-        },
-        {
-          "name": "10",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "BabyYoda"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 10
-            }
-          ]
-        },
-        {
-          "name": "2",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "JohnWick420"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 90
-            }
-          ]
-        },
-        {
-          "name": "3",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "GandalfAFK"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 80
-            }
-          ]
-        },
-        {
-          "name": "4",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "NoScopeNemo"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 70
-            }
-          ]
-        },
-        {
-          "name": "5",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "TinyThanos"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 58
-            }
-          ]
-        },
-        {
-          "name": "6",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "404SkillNotFound"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 50
-            }
-          ]
-        },
-        {
-          "name": "7",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "ObiWanLagobi"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 40
-            }
-          ]
-        },
-        {
-          "name": "8",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "DarthSnack"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 30
-            }
-          ]
-        },
-        {
-          "name": "9",
-          "type": "structure",
-          "children": [
-            {
-              "name": "name",
-              "type": "string",
-              "value": "FrodoSwaggins"
-            },
-            {
-              "name": "value",
-              "type": "number",
-              "value": 20
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "GAME_OVER",
       "type": "boolean",
       "value": false
@@ -628,6 +462,21 @@
       "name": "FIRST_START",
       "type": "boolean",
       "value": true
+    },
+    {
+      "name": "TOP_1",
+      "type": "number",
+      "value": 30
+    },
+    {
+      "name": "TOP_2",
+      "type": "number",
+      "value": 20
+    },
+    {
+      "name": "TOP_3",
+      "type": "number",
+      "value": 10
     }
   ],
   "layouts": [
