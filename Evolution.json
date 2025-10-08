@@ -546,7 +546,15 @@
         "name": "Ground SA.png5",
         "smoothed": true,
         "userAdded": false
-	  }
+      },
+      {
+        "file": "SA 2pose .png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SA 2pose .png",
+        "smoothed": true,
+        "userAdded": false
+      }
     ],
     "resourceFolders": []
   },

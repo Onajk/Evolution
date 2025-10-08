@@ -273,11 +273,11 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "character SA.png",
                   "points": [
                     {
@@ -302,52 +302,42 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Platformer_Character",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Platformer_Character15",
-                  "points": [
-                    {
-                      "name": "Left",
-                      "x": -1280,
-                      "y": 0
-                    },
-                    {
-                      "name": "Right",
-                      "x": 3520,
-                      "y": 0
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 36
+                      },
+                      {
+                        "x": 50.5,
+                        "y": 16.5
+                      },
+                      {
+                        "x": 82,
+                        "y": 42
+                      },
+                      {
+                        "x": 62,
+                        "y": 89
+                      },
+                      {
+                        "x": 49,
+                        "y": 94.5
+                      },
+                      {
+                        "x": 12,
+                        "y": 88.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 82
+                      }
+                    ]
+                  ]
                 },
                 {
-                  "hasCustomCollisionMask": false,
-                  "image": "Platformer_Character16",
+                  "hasCustomCollisionMask": true,
+                  "image": "SA 2pose .png",
                   "points": [
                     {
                       "name": "Left",
@@ -371,147 +361,46 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Platformer_Character17",
-                  "points": [
-                    {
-                      "name": "Left",
-                      "x": -1280,
-                      "y": 0
-                    },
-                    {
-                      "name": "Right",
-                      "x": 3520,
-                      "y": 0
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Platformer_Character18",
-                  "points": [
-                    {
-                      "name": "Left",
-                      "x": -1280,
-                      "y": 0
-                    },
-                    {
-                      "name": "Right",
-                      "x": 3520,
-                      "y": 0
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Platformer_Character19",
-                  "points": [
-                    {
-                      "name": "Left",
-                      "x": -1280,
-                      "y": 0
-                    },
-                    {
-                      "name": "Right",
-                      "x": 3520,
-                      "y": 0
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Platformer_Character20",
-                  "points": [
-                    {
-                      "name": "Left",
-                      "x": -1280,
-                      "y": 0
-                    },
-                    {
-                      "name": "Right",
-                      "x": 3520,
-                      "y": 0
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Platformer_Character21",
-                  "points": [
-                    {
-                      "name": "Left",
-                      "x": -1280,
-                      "y": 0
-                    },
-                    {
-                      "name": "Right",
-                      "x": 3520,
-                      "y": 0
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 76
+                      },
+                      {
+                        "x": 0,
+                        "y": 45
+                      },
+                      {
+                        "x": 8,
+                        "y": 29.5
+                      },
+                      {
+                        "x": 16,
+                        "y": 13
+                      },
+                      {
+                        "x": 34,
+                        "y": 2
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 62,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 43,
+                        "y": 70.5
+                      },
+                      {
+                        "x": 23.5,
+                        "y": 76
+                      }
+                    ]
+                  ]
                 }
               ]
             }
