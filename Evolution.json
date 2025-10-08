@@ -92,42 +92,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/StartingPlayer.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingPlayer.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingGround.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingGround.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Background.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Background.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Top arrow button.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Top arrow button.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Flat Dark/e3943e1b23ceb90f00fc5e7c0481c5147b983fdc5397fb3690e102e53ce72d4f_Top arrow button.png",
-          "name": "Top arrow button.png"
-        }
-      },
-      {
         "file": "assets/NotoSansArabicUI-Black.ttf",
         "kind": "font",
         "metadata": "",
@@ -135,44 +99,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Arabic/58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "file": "assets/SpawnPoint.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\SpawnPoint.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingHazard.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingHazard.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "LOGO_Game.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "LOGO_Game.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Finally See The Light.aac",
-        "kind": "audio",
-        "metadata": "",
-        "name": "a8c8916ac81f64f9904c4bdc5ce43bbdeb08331be4889455a2ecca7e38551a68_Finally See The Light.aac",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/Rock/a8c8916ac81f64f9904c4bdc5ce43bbdeb08331be4889455a2ecca7e38551a68_Finally See The Light.aac",
           "name": "gdevelop-asset-store"
         }
       },
@@ -260,222 +186,6 @@
         }
       },
       {
-        "file": "assets/Platformer_Character.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character4",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character5",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character6",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character7",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character8.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character8",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character9",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character10.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character10",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character11.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character11",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character12.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character12",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character13.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character13",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character14.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character14",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character15.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character15",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character16.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character16",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character17.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character17",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character18.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character18",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character19.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character19",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character20.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character20",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Platformer_Character21.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Platformer_Character21",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Hazard.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hazard",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Hazard2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hazard2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Hazard3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hazard3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/assets_StartingGround.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\StartingGround.png2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "character SA.png",
         "kind": "image",
         "metadata": "",
@@ -492,58 +202,10 @@
         "userAdded": false
       },
       {
-        "file": "Ground SA.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Ground SA.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Ground SA.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Ground SA.png2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Back SA.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Back SA.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Ground SA.png3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Ground SA.png3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Ground SA.png4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Ground SA.png4",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "Obstacle SA 2.png",
         "kind": "image",
         "metadata": "",
         "name": "Obstacle SA 2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Ground SA.png5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Ground SA.png5",
         "smoothed": true,
         "userAdded": false
       },
@@ -607,38 +269,6 @@
         "kind": "image",
         "metadata": "",
         "name": "SA back 1100.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "SA ground 1100.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "SA ground 1100.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Ground SA2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Ground SA2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Ground SA.png6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Ground SA.png6",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Ground SA.png7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Ground SA.png7",
         "smoothed": true,
         "userAdded": false
       },
@@ -1007,10 +637,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/buttonstates"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
