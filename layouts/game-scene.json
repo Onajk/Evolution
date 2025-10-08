@@ -718,6 +718,16 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "SCORE",
+            "=",
+            "0"
+          ]
         }
       ]
     },
