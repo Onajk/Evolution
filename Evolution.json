@@ -441,6 +441,38 @@
         "name": "SA back opt2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "IR back 1100 opt2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "IR back 1100 opt2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "DA back 1100 opt2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DA back 1100 opt2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "IR ground 1100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "IR ground 1100.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "DA ground 1100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DA ground 1100.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

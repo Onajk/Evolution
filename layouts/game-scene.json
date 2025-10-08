@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.814188120371019,
+    "zoomFactor": 0.5843784410741129,
     "windowMask": false
   },
   "objectsGroups": [
@@ -47,7 +47,7 @@
       "width": 128,
       "x": 140,
       "y": 74,
-      "zOrder": 10,
+      "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -125,7 +125,7 @@
       "name": "Platform_Ground",
       "persistentUuid": "74e22a93-870b-49fd-b2d8-cd552b7761ab",
       "width": 0,
-      "x": -1,
+      "x": 0,
       "y": 196,
       "zOrder": 17,
       "numberProperties": [],
@@ -208,6 +208,70 @@
       "x": 266,
       "y": 76,
       "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Background2",
+      "persistentUuid": "b4704011-ac49-40f2-8527-4e28b3335988",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": -11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Background3",
+      "persistentUuid": "9ce01727-557f-4d47-b153-dbcbd0af2cf2",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": -12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Ground2",
+      "persistentUuid": "2c883f6a-a80b-4308-abd2-2c971af287d2",
+      "width": 0,
+      "x": 0,
+      "y": 196,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Ground3",
+      "persistentUuid": "2bfd8a5b-6fad-4cd2-8a7c-d79bc684789a",
+      "width": 0,
+      "x": 0,
+      "y": 196,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -828,6 +892,66 @@
         "lineHeight": 0,
         "color": "74;74;74"
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 196,
+      "name": "Background2",
+      "texture": "IR back 1100 opt2.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 1100,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 196,
+      "name": "Background3",
+      "texture": "DA back 1100 opt2.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 1100,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 24,
+      "name": "Platform_Ground2",
+      "texture": "IR ground 1100.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 1100,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "platformType": "NormalPlatform",
+          "canBeGrabbed": false,
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 24,
+      "name": "Platform_Ground3",
+      "texture": "DA ground 1100.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 1100,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "platformType": "NormalPlatform",
+          "canBeGrabbed": false,
+          "yGrabOffset": 0
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -840,6 +964,12 @@
         "objectName": "Platform_Ground"
       },
       {
+        "objectName": "Platform_Ground2"
+      },
+      {
+        "objectName": "Platform_Ground3"
+      },
+      {
         "objectName": "Rocks"
       },
       {
@@ -850,6 +980,12 @@
       },
       {
         "objectName": "Background"
+      },
+      {
+        "objectName": "Background2"
+      },
+      {
+        "objectName": "Background3"
       },
       {
         "objectName": "Restart_Button"
@@ -1556,7 +1692,47 @@
                     "value": "TiledSpriteObject::XOffset"
                   },
                   "parameters": [
+                    "Platform_Ground2",
+                    "+",
+                    "SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Platform_Ground3",
+                    "+",
+                    "SPEED * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
                     "Background",
+                    "+",
+                    "SPEED/2 * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Background2",
+                    "+",
+                    "SPEED/2 * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Background3",
                     "+",
                     "SPEED/2 * TimeDelta()"
                   ]
@@ -2021,6 +2197,84 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SCORE",
+            ">=",
+            "100"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Background"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Platform_Ground"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SCORE",
+            ">=",
+            "200"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Background2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Platform_Ground2"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
