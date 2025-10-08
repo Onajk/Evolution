@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3645833333333333,
+    "zoomFactor": 0.707714287014665,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -28,7 +28,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 8,
-      "height": 113,
+      "height": 55,
       "keepRatio": true,
       "layer": "",
       "name": "LeaderboardText",
@@ -50,8 +50,8 @@
       "name": "NumberText",
       "persistentUuid": "7feec41f-33fb-4d52-9ae6-7e43f45e8182",
       "width": 0,
-      "x": 200,
-      "y": 164,
+      "x": 353,
+      "y": 74,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -72,8 +72,8 @@
       "name": "NumberText",
       "persistentUuid": "7cc589b9-7c77-4b44-beec-9f436676f6fc",
       "width": 0,
-      "x": 200,
-      "y": 239,
+      "x": 353,
+      "y": 107,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -94,8 +94,8 @@
       "name": "NumberText",
       "persistentUuid": "9a0bc8c9-57e3-44e0-9149-36ad83c77dd1",
       "width": 0,
-      "x": 200,
-      "y": 314,
+      "x": 353,
+      "y": 141,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -116,8 +116,8 @@
       "name": "NumberText",
       "persistentUuid": "ece78dc3-a87e-4f3e-a02d-fe8389ed4f8b",
       "width": 0,
-      "x": 200,
-      "y": 389,
+      "x": 354,
+      "y": 172,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -138,8 +138,8 @@
       "name": "NumberText",
       "persistentUuid": "fee341b2-efc0-4fcf-90f5-e6075a3ef637",
       "width": 0,
-      "x": 200,
-      "y": 464,
+      "x": 353,
+      "y": 205,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -160,8 +160,8 @@
       "name": "NumberText",
       "persistentUuid": "e1beec54-f043-46ac-97ad-e650e1c30b0b",
       "width": 0,
-      "x": 200,
-      "y": 539,
+      "x": 624,
+      "y": 77,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -182,8 +182,8 @@
       "name": "NumberText",
       "persistentUuid": "1a5a96b9-f319-4782-b1e7-8931bd4e6beb",
       "width": 0,
-      "x": 200,
-      "y": 614,
+      "x": 621,
+      "y": 110,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -204,8 +204,8 @@
       "name": "NumberText",
       "persistentUuid": "2d0d8a40-19ca-4731-a594-f4b750b3b00f",
       "width": 0,
-      "x": 200,
-      "y": 689,
+      "x": 620,
+      "y": 144,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -226,8 +226,8 @@
       "name": "NumberText",
       "persistentUuid": "308c3ea4-311c-48da-af4d-fc500c3eebe8",
       "width": 0,
-      "x": 200,
-      "y": 764,
+      "x": 619,
+      "y": 174,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -249,8 +249,8 @@
       "name": "NumberText",
       "persistentUuid": "4d7f5865-cfcf-4c8d-b3fd-fccbf1f96e0c",
       "width": 135,
-      "x": 107,
-      "y": 839,
+      "x": 501,
+      "y": 203,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -266,14 +266,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 56,
+      "height": 35,
       "keepRatio": true,
       "layer": "",
       "name": "UserName1",
       "persistentUuid": "ba4a4666-58db-4c29-a48a-8fe4457bc71c",
-      "width": 526,
-      "x": 297,
-      "y": 164,
+      "width": 101,
+      "x": 380,
+      "y": 74,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -288,8 +288,8 @@
       "name": "UserValue1",
       "persistentUuid": "b045db77-d93a-413e-abc8-a6d298542b30",
       "width": 0,
-      "x": 873,
-      "y": 134,
+      "x": 479,
+      "y": 63,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -304,8 +304,8 @@
       "name": "UserName2",
       "persistentUuid": "2a403a99-27f9-469b-90a8-9ab425caa5d9",
       "width": 0,
-      "x": 297,
-      "y": 239,
+      "x": 380,
+      "y": 108,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -320,8 +320,8 @@
       "name": "UserName3",
       "persistentUuid": "78bdaa0a-2d4b-4c85-88ed-504fa101f52f",
       "width": 0,
-      "x": 297,
-      "y": 314,
+      "x": 382,
+      "y": 141,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -336,8 +336,8 @@
       "name": "UserName4",
       "persistentUuid": "5b242353-3592-4ad5-8938-6b8ce26a2366",
       "width": 0,
-      "x": 297,
-      "y": 389,
+      "x": 380,
+      "y": 176,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -352,8 +352,8 @@
       "name": "UserName5",
       "persistentUuid": "18c1d0cd-109d-4e85-b9b6-8d3c140ca81c",
       "width": 0,
-      "x": 297,
-      "y": 464,
+      "x": 378,
+      "y": 206,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -368,8 +368,8 @@
       "name": "UserName6",
       "persistentUuid": "12e4b79d-9931-44f9-9079-b5dd5d3de1b1",
       "width": 0,
-      "x": 297,
-      "y": 539,
+      "x": 647,
+      "y": 76,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -384,8 +384,8 @@
       "name": "UserName7",
       "persistentUuid": "7bf58549-9f5a-439f-9a90-3aa3cdb2e551",
       "width": 0,
-      "x": 297,
-      "y": 614,
+      "x": 649,
+      "y": 107,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -400,8 +400,8 @@
       "name": "UserName8",
       "persistentUuid": "626d4b54-eaee-4db0-be21-8642cd9e374b",
       "width": 0,
-      "x": 297,
-      "y": 689,
+      "x": 649,
+      "y": 143,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -416,8 +416,8 @@
       "name": "UserName9",
       "persistentUuid": "b3d8239a-4719-491a-901b-4c55c25b9103",
       "width": 0,
-      "x": 297,
-      "y": 764,
+      "x": 649,
+      "y": 172,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -432,8 +432,8 @@
       "name": "UserName10",
       "persistentUuid": "b0afebfd-7424-4a8e-8316-2faf043abb3f",
       "width": 0,
-      "x": 297,
-      "y": 839,
+      "x": 650,
+      "y": 204,
       "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
@@ -448,8 +448,8 @@
       "name": "UserValue2",
       "persistentUuid": "6f7699db-fb82-4e6b-9ad7-6f38814a6d66",
       "width": 0,
-      "x": 873,
-      "y": 209,
+      "x": 479,
+      "y": 98,
       "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
@@ -464,8 +464,8 @@
       "name": "UserValue3",
       "persistentUuid": "dd08f7fa-6c1d-40d7-96f6-5122e5076d36",
       "width": 0,
-      "x": 873,
-      "y": 287,
+      "x": 479,
+      "y": 130,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -480,8 +480,8 @@
       "name": "UserValue4",
       "persistentUuid": "4198fce0-bc1f-447d-84f1-9535bc45ad65",
       "width": 0,
-      "x": 873,
-      "y": 363,
+      "x": 480,
+      "y": 164,
       "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
@@ -496,8 +496,8 @@
       "name": "UserValue5",
       "persistentUuid": "f3a4a9c3-ed83-49ad-9683-9e0cceb1eba8",
       "width": 0,
-      "x": 873,
-      "y": 439,
+      "x": 480,
+      "y": 197,
       "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
@@ -512,8 +512,8 @@
       "name": "UserValue6",
       "persistentUuid": "a4a88354-3334-4aee-9547-7114819b76a5",
       "width": 0,
-      "x": 873,
-      "y": 516,
+      "x": 749,
+      "y": 68,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -528,8 +528,8 @@
       "name": "UserValue7",
       "persistentUuid": "b72c1935-3676-4420-90fc-0627181d5522",
       "width": 0,
-      "x": 873,
-      "y": 595,
+      "x": 749,
+      "y": 100,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -544,8 +544,8 @@
       "name": "UserValue8",
       "persistentUuid": "e8200c82-a86d-4fc7-9fe6-a6d0cc1bbcfe",
       "width": 0,
-      "x": 873,
-      "y": 668,
+      "x": 747,
+      "y": 131,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -560,8 +560,8 @@
       "name": "UserValue9",
       "persistentUuid": "671f956d-bd84-4515-8a70-4841aabed7b4",
       "width": 0,
-      "x": 873,
-      "y": 743,
+      "x": 747,
+      "y": 159,
       "zOrder": 21,
       "numberProperties": [],
       "stringProperties": [],
@@ -576,8 +576,8 @@
       "name": "UserValue10",
       "persistentUuid": "08f62e69-2503-480d-8164-10912a2598ac",
       "width": 0,
-      "x": 873,
-      "y": 818,
+      "x": 746,
+      "y": 189,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -592,8 +592,8 @@
       "name": "BackToMenu",
       "persistentUuid": "5693d9b8-8b8b-4eea-a063-53706cad5a5e",
       "width": 0,
-      "x": 0,
-      "y": 96,
+      "x": 2,
+      "y": -2,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -615,7 +615,7 @@
       "string": "LEADERBOARD",
       "font": "",
       "textAlignment": "center",
-      "characterSize": 100,
+      "characterSize": 50,
       "color": {
         "b": 0,
         "g": 0,
@@ -639,7 +639,7 @@
         "font": "",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 100,
+        "characterSize": 50,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -664,7 +664,7 @@
       "string": "0.",
       "font": "",
       "textAlignment": "right",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -688,7 +688,7 @@
         "font": "",
         "textAlignment": "right",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -707,7 +707,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -731,7 +731,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -750,7 +750,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -774,7 +774,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -793,7 +793,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -817,7 +817,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -836,7 +836,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -860,7 +860,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -879,7 +879,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -903,7 +903,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -922,7 +922,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -946,7 +946,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -965,7 +965,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -989,7 +989,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1008,7 +1008,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1032,7 +1032,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1051,7 +1051,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1075,7 +1075,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1094,7 +1094,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1118,7 +1118,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1137,7 +1137,7 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1161,7 +1161,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1180,7 +1180,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1204,7 +1204,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1223,7 +1223,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1247,7 +1247,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1266,7 +1266,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1290,7 +1290,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1309,7 +1309,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1333,7 +1333,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1352,7 +1352,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1376,7 +1376,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1395,7 +1395,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1419,7 +1419,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1438,7 +1438,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1462,7 +1462,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1481,7 +1481,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1505,7 +1505,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1524,7 +1524,7 @@
       "string": "0",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 20,
       "color": {
         "b": 0,
         "g": 0,
@@ -1548,7 +1548,7 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1568,7 +1568,7 @@
         "BottomPadding": 4,
         "TopPadding": 0,
         "HoveredFadeOutDuration": 0,
-        "LabelText": "Button"
+        "LabelText": "MENU"
       }
     }
   ],
@@ -1992,8 +1992,16 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
