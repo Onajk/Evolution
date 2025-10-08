@@ -1370,7 +1370,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1478,6 +1477,16 @@
                 "=",
                 "SCORE"
               ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.10.name",
+                "=",
+                "leaderboard.9.name"
+              ]
             }
           ]
         },
@@ -1534,6 +1543,26 @@
                 "leaderboard.8.value",
                 "=",
                 "SCORE"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.10.name",
+                "=",
+                "leaderboard.9.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.9.name",
+                "=",
+                "leaderboard.8.name"
               ]
             }
           ]
@@ -1601,6 +1630,36 @@
                 "leaderboard.7.value",
                 "=",
                 "SCORE"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.10.name",
+                "=",
+                "leaderboard.9.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.9.name",
+                "=",
+                "leaderboard.8.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.8.name",
+                "=",
+                "leaderboard.7.name"
               ]
             }
           ]
@@ -1678,6 +1737,46 @@
                 "leaderboard.6.value",
                 "=",
                 "SCORE"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.10.name",
+                "=",
+                "leaderboard.9.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.9.name",
+                "=",
+                "leaderboard.8.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.8.name",
+                "=",
+                "leaderboard.7.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.7.name",
+                "=",
+                "leaderboard.6.name"
               ]
             }
           ]
@@ -1765,6 +1864,56 @@
                 "leaderboard.5.value",
                 "=",
                 "SCORE"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.10.name",
+                "=",
+                "leaderboard.9.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.9.name",
+                "=",
+                "leaderboard.8.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.8.name",
+                "=",
+                "leaderboard.7.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.7.name",
+                "=",
+                "leaderboard.6.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.6.name",
+                "=",
+                "leaderboard.5.name"
               ]
             }
           ]
@@ -1862,6 +2011,66 @@
                 "leaderboard.4.value",
                 "=",
                 "SCORE"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.10.name",
+                "=",
+                "leaderboard.9.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.9.name",
+                "=",
+                "leaderboard.8.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.8.name",
+                "=",
+                "leaderboard.7.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.7.name",
+                "=",
+                "leaderboard.6.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.6.name",
+                "=",
+                "leaderboard.5.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.5.name",
+                "=",
+                "leaderboard.4.name"
               ]
             }
           ]
@@ -1969,6 +2178,76 @@
                 "leaderboard.3.value",
                 "=",
                 "SCORE"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.10.name",
+                "=",
+                "leaderboard.9.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.9.name",
+                "=",
+                "leaderboard.8.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.8.name",
+                "=",
+                "leaderboard.7.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.7.name",
+                "=",
+                "leaderboard.6.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.6.name",
+                "=",
+                "leaderboard.5.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.5.name",
+                "=",
+                "leaderboard.4.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.4.name",
+                "=",
+                "leaderboard.3.name"
               ]
             }
           ]
@@ -2086,6 +2365,86 @@
                 "leaderboard.2.value",
                 "=",
                 "SCORE"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.10.name",
+                "=",
+                "leaderboard.9.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.9.name",
+                "=",
+                "leaderboard.8.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.8.name",
+                "=",
+                "leaderboard.7.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.7.name",
+                "=",
+                "leaderboard.6.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.6.name",
+                "=",
+                "leaderboard.5.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.5.name",
+                "=",
+                "leaderboard.4.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.4.name",
+                "=",
+                "leaderboard.3.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.3.name",
+                "=",
+                "leaderboard.2.name"
               ]
             }
           ]
@@ -2203,6 +2562,96 @@
                 "leaderboard.1.value",
                 "=",
                 "SCORE"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.10.name",
+                "=",
+                "leaderboard.9.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.9.name",
+                "=",
+                "leaderboard.8.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.8.name",
+                "=",
+                "leaderboard.7.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.7.name",
+                "=",
+                "leaderboard.6.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.6.name",
+                "=",
+                "leaderboard.5.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.5.name",
+                "=",
+                "leaderboard.4.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.4.name",
+                "=",
+                "leaderboard.3.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.3.name",
+                "=",
+                "leaderboard.2.name"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "leaderboard.2.name",
+                "=",
+                "leaderboard.1.name"
               ]
             }
           ]
