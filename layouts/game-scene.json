@@ -1704,9 +1704,9 @@
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 1200,
           "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside"
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 1200
         }
       ],
       "animations": [
@@ -1819,9 +1819,9 @@
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 1200,
           "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside"
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 1200
         }
       ],
       "animations": [
@@ -1913,9 +1913,9 @@
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 1000,
           "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside"
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 1000
         }
       ],
       "animations": [
@@ -2232,6 +2232,19 @@
           },
           "parameters": [
             "Leaderboard_Button"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "Classicals.de-Beethoven-Moonlight-Sonata-1.-Movement-Sonata-Nr.-14,-Op.-27,-Nr.-2.mp3",
+            "1",
+            "",
+            "35",
+            ""
           ]
         }
       ]
@@ -3506,7 +3519,7 @@
                         "",
                         "350905_5450487-lq.mp3",
                         "",
-                        "20",
+                        "30",
                         ""
                       ]
                     }
@@ -3551,7 +3564,7 @@
                         "",
                         "SUCCESS BEEPS Multiple Tone2.wav",
                         "",
-                        "10",
+                        "15",
                         ""
                       ]
                     },
